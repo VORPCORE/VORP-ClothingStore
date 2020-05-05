@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29728.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vorpclothingstore_cl", "vorpclothingstore_cl\vorpclothingstore_cl.csproj", "{F7D40B53-CFEC-4782-82F3-1FE0249E4F85}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vorpclothingstore_sv", "vorpclothingstore_sv\vorpclothingstore_sv.csproj", "{1D5118B2-F856-4E95-9CAF-8F42C44BE91E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F7D40B53-CFEC-4782-82F3-1FE0249E4F85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7D40B53-CFEC-4782-82F3-1FE0249E4F85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7D40B53-CFEC-4782-82F3-1FE0249E4F85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7D40B53-CFEC-4782-82F3-1FE0249E4F85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D5118B2-F856-4E95-9CAF-8F42C44BE91E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D5118B2-F856-4E95-9CAF-8F42C44BE91E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D5118B2-F856-4E95-9CAF-8F42C44BE91E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D5118B2-F856-4E95-9CAF-8F42C44BE91E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {32A227B2-95AA-495A-94E2-EF7AAAB8D020}
+	EndGlobalSection
+EndGlobal

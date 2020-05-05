@@ -1,0 +1,7 @@
+E:\VORP-Repos\VORP-ClothingStore\VORP-ClothingStore[Server-Client]\build\vorp_clothingstore\vorpclothingstore_sv.net.dll
+E:\VORP-Repos\VORP-ClothingStore\VORP-ClothingStore[Server-Client]\build\vorp_clothingstore\vorpclothingstore_sv.net.pdb
+E:\VORP-Repos\VORP-ClothingStore\VORP-ClothingStore[Server-Client]\vorpclothingstore_sv\obj\Debug\vorpclothingstore_sv.csprojAssemblyReference.cache
+E:\VORP-Repos\VORP-ClothingStore\VORP-ClothingStore[Server-Client]\vorpclothingstore_sv\obj\Debug\vorpclothingstore_sv.net.dll
+E:\VORP-Repos\VORP-ClothingStore\VORP-ClothingStore[Server-Client]\vorpclothingstore_sv\obj\Debug\vorpclothingstore_sv.net.pdb
+E:\VORP-Repos\VORP-ClothingStore\VORP-ClothingStore[Server-Client]\vorpclothingstore_sv\obj\Debug\vorpclothingstore_sv.csproj.CopyComplete
+E:\VORP-Repos\VORP-ClothingStore\VORP-ClothingStore[Server-Client]\build\vorp_clothingstore\Config.json

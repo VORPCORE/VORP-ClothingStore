@@ -1,0 +1,44 @@
+{
+  "defaultlang": "Es", // set your language
+
+
+  //Price of Categories
+  "costHats": 5.0,
+  "costEyeWear": 5.0,
+  "costNeckWear": 5.0,
+  "costNeckTies": 5.0,
+  "costShirt": 5.0,
+  "costSuspender": 5.0,
+  "costVest": 5.0,
+  "costCoat": 5.0,
+  "costPoncho": 5.0,
+  "costCloak": 5.0,
+  "costGlove": 5.0,
+  "costRingRh": 5.0,
+  "costRingLh": 5.0,
+  "costBracelet": 5.0,
+  "costGunbelt": 5.0,
+  "costBelt": 5.0,
+  "costBuckle": 5.0,
+  "costHolster": 5.0,
+  "costPant": 5.0,
+  "costSkirt": 5.0,
+  "costChap": 5.0,
+  "costBoots": 5.0,
+  "costSpurs": 5.0,
+  //end
+
+  "Stores": [
+    {
+      "name": "Coco Chanel",
+      "BlipIcon": 1195729388,
+      "EnterStore": [ 2554.63, -1169.08, 53.68, 2.0 ],
+      "ExitWardrobe": [ 2552.91, -1161.32, 53.0, 89.54],
+      "CameraMain": [ 2554.943, -1158.621, 53.58861, -2.330096, 0.0, -156.1156 ],
+      "StoreRoom": [ 2555.89, -1161.23, 52.6, 12.85 ],
+      "DoorRoom": [ 2553.27, -1161.21, 53.60 ],
+      "NPCStore": [ 2554.6, -1166.83, 52.7, 180.95 ]
+    }
+  ]
+
+}
