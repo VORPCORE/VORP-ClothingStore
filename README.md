@@ -11,4 +11,4 @@ Clothing Store
 * Copy and paste ```vorp_clothingstore``` folder to ```resources/vorp_clothingstore```
 * Add ```ensure vorp_clothingstore``` to your ```server.cfg``` file
 * To change the language go to ```resources/vorp_clothingstore``` and change the default language
-Now you are ready!
+* Now you are ready!
