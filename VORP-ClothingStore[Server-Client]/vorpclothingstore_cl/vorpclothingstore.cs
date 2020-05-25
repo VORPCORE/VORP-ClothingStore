@@ -20,6 +20,7 @@ namespace vorpclothingstore_cl
 
         public static async Task InitStores()
         {
+            await Delay(10000);
             string ped = "S_M_M_Tailor_01";
             uint HashPed = (uint)API.GetHashKey(ped);
             await Miscellanea.LoadModel(HashPed);
@@ -73,7 +74,7 @@ namespace vorpclothingstore_cl
                 if (API.GetDistanceBetweenCoords(pCoords.X, pCoords.Y, pCoords.Z, x, y, z, false) <= radius)
                 {
                     await DrawTxt(GetConfig.Langs["PressToOpen"], 0.5f, 0.9f, 0.7f, 0.7f, 255, 255, 255, 255, true, true);
-                    if (API.IsControlJustPressed(2, 0xC7B5340A))
+                    if (API.IsControlJustPressed(2, 0xD9D0E1C0))
                     {
                         await Commands.MoveToCoords(i);
                     }

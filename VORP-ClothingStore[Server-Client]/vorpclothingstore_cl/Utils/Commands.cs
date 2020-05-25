@@ -105,19 +105,7 @@ namespace vorpclothingstore_cl.Utils
             float CameraRoty = float.Parse(GetConfig.Config["Stores"][shop]["CameraMain"][4].ToString());
             float CameraRotz = float.Parse(GetConfig.Config["Stores"][shop]["CameraMain"][5].ToString());
 
-            foreach (var v in GetActivePlayers())
-            {
-                int myId = GetPlayerServerId(PlayerId());
-                int id = v + 1;
-                if (id != myId)
-                {
-                    int player = GetPlayerFromServerId(id);
-                    SetEntityAlpha(GetPlayerPed(player), 0, false);
-                    SetEntityNoCollisionEntity(PlayerPedId(), GetPlayerPed(player), false);
-                    Debug.WriteLine(id.ToString());
-                }
-                await Delay(0);
-            }
+            TriggerEvent("vorp:setInstancePlayer", true);
 
             ClearPedTasksImmediately(vorpclothingstore.StorePeds[shop], 1, 1);
             FreezeEntityPosition(vorpclothingstore.StorePeds[shop], false);
@@ -164,11 +152,11 @@ namespace vorpclothingstore_cl.Utils
 
         public static void MenuDressUpCharacter(string model)
         {
-
+            MenuController.Menus.Clear();
             //Definimos el nombre y subtitlo del menu con un constructor
             Menu mdu = new Menu(GetConfig.Langs["TitleMenuClothes"], GetConfig.Langs["SubTitleMenuClothes"]);
             MenuController.AddMenu(mdu);
-
+            MenuController.MenuToggleKey = (Control)0;
             isBuy = false;
 
             List<string> hatType = new List<string>();
@@ -1141,18 +1129,7 @@ namespace vorpclothingstore_cl.Utils
             SetEntityHeading(PlayerPedId(), PedExitheading);
 
 
-            foreach (var v in GetActivePlayers())
-            {
-                int myId = GetPlayerServerId(PlayerId());
-                int id = v + 1;
-                if (id != myId)
-                {
-                    int player = GetPlayerFromServerId(id);
-                    SetEntityAlpha(GetPlayerPed(player), 255, false);
-                    SetEntityNoCollisionEntity(PlayerPedId(), GetPlayerPed(player), true);
-                }
-                await Delay(0);
-            }
+            TriggerEvent("vorp:setInstancePlayer", false);
 
             DoScreenFadeIn(1000);
         }
