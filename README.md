@@ -1,2 +1,2 @@
 # VORP-ClothingStore
-VORP Clothing Store
+Clothing Store
