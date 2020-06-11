@@ -1,14 +1,14 @@
 {
 
-    "PressToOpen": "Press [~e~Enter~q~] to access the store", // T�tulo del Men�
+    "PressToOpen": "Press [~e~Enter~q~] to access the store", // Menu title
 
-    "TitleMenuClothes": "Dressing room", // T�tulo del Men�
-    "SubTitleMenuClothes": "Dress up your character", // Descripci�n del Men�
+    "TitleMenuClothes": "Dressing room", // Menu title
+    "SubTitleMenuClothes": "Dress up your character", // Menu description
 
     "NoExistValue": "Does not exist", // The option it gives when there is no option
 
     "NoMoney": "You do not have enough money",
-    "SuccessfulBuy": "You have been charged", // Shows the money you have paid
+    "SuccessfulBuy": "You have been charged", // Shows how much money you have paid
 
     "HatsValue": "Hat #", // The options of the hats section
     "GlassesValue": "Glasses #", // The options of the glasses section
