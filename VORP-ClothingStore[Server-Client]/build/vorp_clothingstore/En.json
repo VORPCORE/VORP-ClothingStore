@@ -1,6 +1,6 @@
 {
 
-    "PressToOpen": "Press [~e~Enter~q~] to access the store", // Menu title
+    "PressToOpen": "Press [~e~Space~q~] to access the store", // Menu title
 
     "TitleMenuClothes": "Dressing room", // Menu title
     "SubTitleMenuClothes": "Dress up your character", // Menu description
