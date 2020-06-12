@@ -1,11 +1,11 @@
 {
 
-    "PressToOpen": "Pulsa [~e~Espacio~q~] para acceder a la tienda", // T�tulo del Men�
+    "PressToOpen": "Pulsa [~e~Espacio~q~] para acceder a la tienda", // Título del Menú
 
-    "TitleMenuClothes": "Vestidor", // T�tulo del Men�
-    "SubTitleMenuClothes": "Viste a tu personaje", // Descripci�n del Men�
+    "TitleMenuClothes": "Vestidor", // Título del Menú
+    "SubTitleMenuClothes": "Viste a tu personaje", // Descripción del Menú
 
-    "NoExistValue": "No hay", // La opci�n que da cuando no hay opciones en alg�n apartado
+    "NoExistValue": "No hay", // La opción que da cuando no hay opciones en algún apartado
 
     "NoMoney": "No tienes suficiente dinero",
     "SuccessfulBuy": "Te han cobrado", // Muestra el dinero que te cobran
@@ -24,34 +24,34 @@
     "RingsValue": "Anillo #", // Las opciones del apartado de los anillos
     "BraceletsValue": "Pulsera #", // Las opciones del apartado de las pulseras
     "HolstersValue": "Cartuchera #", // Las opciones del apartado de las cartucheras
-    "BeltsValue": "Cintur�n #", // Las opciones del apartado de los cinturones
+    "BeltsValue": "Cinturón #", // Las opciones del apartado de los cinturones
     "BucklesValue": "Hebilla #", // Las opciones del apartado de las hebillas
-    "PantsValue": "Pantal�n #", // Las opciones del apartado de los pantalones
+    "PantsValue": "Pantalón #", // Las opciones del apartado de los pantalones
     "SkirtsValue": "Falda #", // Las opciones del apartado de las faldas
     "ChapsValue": "Zahones #", // Las opciones del apartado de los zahones
     "BootsValue": "Botas #", // Las opciones del apartado de las botas
     "SpursValue": "Espuelas #", // Las opciones del apartado de las espuelas
-    "NoHatsValue": "Sin Sombrero", // La opci�n que da cuando no hay opciones
-    "NoGlassesValue": "Sin Anteojos", // La opci�n que da cuando no hay opciones
-    "NoNeckwearValue": "Cuello al descubierto", // La opci�n que da cuando no hay opciones
-    "NoTiesValue": "Sin Corbata", // La opci�n que da cuando no hay opciones
-    "NoShirtsValue": "Sin Camisa", // La opci�n que da cuando no hay opciones
-    "NoSuspendersValue": "Sin Tirantes", // La opci�n que da cuando no hay opciones
-    "NoVestsValue": "Sin Chaleco", // La opci�n que da cuando no hay opciones
-    "NoCoatsValue": "Sin Abrigo", // La opci�n que da cuando no hay opciones
-    "NoPonchosValue": "Sin Poncho", // La opci�n que da cuando no hay opciones
-    "NoCloaksValue": "Sin Capa", // La opci�n que da cuando no hay opciones
-    "NoGlovesValue": "Sin Guantes", // La opci�n que da cuando no hay opciones
-    "NoRingsValue": "Sin Anillo", // La opci�n que da cuando no hay opciones
-    "NoBraceletsValue": "Sin Pulsera", // La opci�n que da cuando no hay opciones
-    "NoHolstersValue": "Sin Cartuchera", // La opci�n que da cuando no hay opciones
-    "NoBeltsValue": "Sin Cintur�n", // La opci�n que da cuando no hay opciones
-    "NoBucklesValue": "Sin Hebilla", // La opci�n que da cuando no hay opciones
-    "NoPantsValue": "Sin Pantal�n", // La opci�n que da cuando no hay opciones
-    "NoSkirtsValue": "Sin Falda", // La opci�n que da cuando no hay opciones
-    "NoChapsValue": "Sin Zahones", // La opci�n que da cuando no hay opciones
-    "NoBootsValue": "Sin Botas", // La opci�n que da cuando no hay opciones
-    "NoSpursValue": "Sin Espuelas", // La opci�n que da cuando no hay opciones
+    "NoHatsValue": "Sin Sombrero", // La opción que da cuando no hay opciones
+    "NoGlassesValue": "Sin Anteojos", // La opción que da cuando no hay opciones
+    "NoNeckwearValue": "Cuello al descubierto", // La opción que da cuando no hay opciones
+    "NoTiesValue": "Sin Corbata", // La opción que da cuando no hay opciones
+    "NoShirtsValue": "Sin Camisa", // La opción que da cuando no hay opciones
+    "NoSuspendersValue": "Sin Tirantes", // La opción que da cuando no hay opciones
+    "NoVestsValue": "Sin Chaleco", // La opción que da cuando no hay opciones
+    "NoCoatsValue": "Sin Abrigo", // La opción que da cuando no hay opciones
+    "NoPonchosValue": "Sin Poncho", // La opción que da cuando no hay opciones
+    "NoCloaksValue": "Sin Capa", // La opción que da cuando no hay opciones
+    "NoGlovesValue": "Sin Guantes", // La opción que da cuando no hay opciones
+    "NoRingsValue": "Sin Anillo", // La opción que da cuando no hay opciones
+    "NoBraceletsValue": "Sin Pulsera", // La opción que da cuando no hay opciones
+    "NoHolstersValue": "Sin Cartuchera", // La opción que da cuando no hay opciones
+    "NoBeltsValue": "Sin Cinturón", // La opción que da cuando no hay opciones
+    "NoBucklesValue": "Sin Hebilla", // La opción que da cuando no hay opciones
+    "NoPantsValue": "Sin Pantalón", // La opción que da cuando no hay opciones
+    "NoSkirtsValue": "Sin Falda", // La opción que da cuando no hay opciones
+    "NoChapsValue": "Sin Zahones", // La opción que da cuando no hay opciones
+    "NoBootsValue": "Sin Botas", // La opción que da cuando no hay opciones
+    "NoSpursValue": "Sin Espuelas", // La opción que da cuando no hay opciones
 
     "Hats": "Sombreros",
     "Glasses": "Anteojos",
@@ -79,7 +79,7 @@
 
     "Finish": "Comprar Ropa", // Confirma la compra
 
-    //Descripciones de los apartados del Men� de la ropa
+    //Descripciones de los apartados del Menú de la ropa
     "HatsDesc": "Elige el sombrero",
     "GlassesDesc": "Elige los anteojos",
     "NeckwearDesc": "Elige la prenda para el cuello",
@@ -95,10 +95,10 @@
     "LeftRingsDesc": "Elige los anillos de la mano izquierda",
     "BraceletsDesc": "Elige la pulsera",
     "PrimaryHolstersDesc": "Elige la cartuchera principal",
-    "BeltsDesc": "Elige el cintur�n",
+    "BeltsDesc": "Elige el cinturón",
     "BucklesDesc": "Elige la hebilla",
     "SecondaryHolstersDesc": "Elige la cartuchera secundaria",
-    "PantsDesc": "Elige el pantal�n",
+    "PantsDesc": "Elige el pantalón",
     "SkirtsDesc": "Elige la falda",
     "ChapsDesc": "Elige los zahones",
     "BootsDesc": "Elige las botas",
