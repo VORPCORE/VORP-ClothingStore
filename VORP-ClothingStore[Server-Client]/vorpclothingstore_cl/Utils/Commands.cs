@@ -749,7 +749,7 @@ namespace vorpclothingstore_cl.Utils
             mdu.AddMenuItem(mListPants); // Lo añadimos al menu
 
             List<string> skirtsType = new List<string>();
-            pantsType.Add(GetConfig.Langs["NoSkirtsValue"]);
+            skirtsType.Add(GetConfig.Langs["NoSkirtsValue"]);
             int indexSkirt = 0;
 
             if (model == "mp_male")
