@@ -1,13 +1,11 @@
 ﻿using CitizenFX.Core;
-using static CitizenFX.Core.Native.API;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using CitizenFX.Core.Native;
 using MenuAPI;
 using Newtonsoft.Json.Linq;
+using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using static CitizenFX.Core.Native.API;
 
 namespace vorpclothingstore_cl.Utils
 {
@@ -114,7 +112,7 @@ namespace vorpclothingstore_cl.Utils
 
             await Delay(1000);
             NetworkSetInSpectatorMode(true, PlayerPedId());
-            
+
             int HashPed = GetHashKey(ped);
             int PedWardrobe = CreatePed((uint)HashPed, Doorx, Doory, Doorz, 0.0f, false, true, true, true);
             Function.Call((Hash)0x283978A15512B2FE, PedWardrobe, true);
@@ -170,7 +168,7 @@ namespace vorpclothingstore_cl.Utils
                 {
                     hatType.Add(GetConfig.Langs["HatsValue"] + i);
                 }
-                if(ClothesUtils.HATS_MALE.IndexOf(ConvertValue(ClothesDB["Hat"].ToString())) != -1)
+                if (ClothesUtils.HATS_MALE.IndexOf(ConvertValue(ClothesDB["Hat"].ToString())) != -1)
                 {
                     indexHat = ClothesUtils.HATS_MALE.IndexOf(ConvertValue(ClothesDB["Hat"].ToString())) + 1;
                 }

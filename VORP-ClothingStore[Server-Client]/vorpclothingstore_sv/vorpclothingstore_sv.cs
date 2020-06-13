@@ -1,10 +1,6 @@
 ﻿using CitizenFX.Core;
 using CitizenFX.Core.Native;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace vorpclothingstore_sv
 {
@@ -27,7 +23,7 @@ namespace vorpclothingstore_sv
                 double money = user.money;
 
 
-                if (totalCost <= money )
+                if (totalCost <= money)
                 {
                     TriggerEvent("vorp:removeMoney", _source, 0, totalCost);
 
@@ -41,7 +37,7 @@ namespace vorpclothingstore_sv
                     source.TriggerEvent("vorp:Tip", LoadConfig.Langs["NoMoney"], 4000);
                     source.TriggerEvent($"vorpclothingstore:startBuyCloths", false);
                 }
-                
+
             }));
         }
 
