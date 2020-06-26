@@ -1106,10 +1106,9 @@ namespace vorpclothingstore_cl.Utils
             {
                 // Code in here would get executed whenever an item is pressed.
                 Debug.WriteLine($"OnItemSelect: [{_menu}, {_item}, {_index}]");
-                if (_index == 23)
+                if (_index == 24)
                 {
                     isBuy = true;
-                    Debug.WriteLine($"Terminado");
                     FinishBuy(isBuy, totalCost);
                     mdu.CloseMenu();
                 }
