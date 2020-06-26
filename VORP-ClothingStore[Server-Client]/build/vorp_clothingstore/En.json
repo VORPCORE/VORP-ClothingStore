@@ -10,6 +10,7 @@
     "NoMoney": "You do not have enough money",
     "SuccessfulBuy": "You have been charged", // Shows how much money you have paid
 
+    "MaskValue": "Face Mask #",
     "HatsValue": "Hat #", // The options of the hats section
     "GlassesValue": "Glasses #", // The options of the glasses section
     "NeckwearValue": "Garment #", // The options of the neckwear section
@@ -52,9 +53,11 @@
     "NoChapsValue": "Without Chaps", // The option it gives when you do not wear chaps
     "NoBootsValue": "Without Boots", // The option it gives when you do not wear boots
     "NoSpursValue": "Without Spurs", // The option it gives when you do not wear spurs
+    "NoMaskValue": "Without Face Mask", // The option it gives when you do not wear a face mask
 
     "Hats": "Hats",
     "Glasses": "Glasses",
+    "Masks": "Face Masks",
     "Neckwear": "Neckwear",
     "Ties": "Ties",
     "Shirts": "Shirts",
@@ -82,6 +85,7 @@
     //Descriptions of the clothing Menu sections
     "HatsDesc": "Choose the hat",
     "GlassesDesc": "Choose the glasses",
+    "MasksDesc": "Choose if you want to wear a face mask",
     "NeckwearDesc": "Choose the neckwear",
     "TiesDesc": "Choose the tie",
     "ShirtsDesc": "Choose the shirt",
