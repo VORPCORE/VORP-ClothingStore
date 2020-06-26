@@ -1,94 +1,95 @@
 {
-    "defaultlang": "Es", // set your language
+  "defaultlang": "Es", // set your language
 
 
-    //Price of Categories
-    "costHats": 5.0,
-    "costEyeWear": 5.0,
-    "costNeckWear": 5.0,
-    "costMask": 5.0,
-    "costNeckTies": 5.0,
-    "costShirt": 5.0,
-    "costSuspender": 5.0,
-    "costVest": 5.0,
-    "costCoat": 5.0,
-    "costPoncho": 5.0,
-    "costCloak": 5.0,
-    "costGlove": 5.0,
-    "costRingRh": 5.0,
-    "costRingLh": 5.0,
-    "costBracelet": 5.0,
-    "costGunbelt": 5.0,
-    "costBelt": 5.0,
-    "costBuckle": 5.0,
-    "costHolster": 5.0,
-    "costPant": 5.0,
-    "costSkirt": 5.0,
-    "costChap": 5.0,
-    "costBoots": 5.0,
-    "costSpurs": 5.0,
-    //end
+  //Price of Categories
+  "costHats": 5.0,
+  "costEyeWear": 5.0,
+  "costNeckWear": 5.0,
+  "costMask": 5.0,
+  "costNeckTies": 5.0,
+  "costShirt": 5.0,
+  "costSuspender": 5.0,
+  "costVest": 5.0,
+  "costCoat": 5.0,
+  "costPoncho": 5.0,
+  "costCloak": 5.0,
+  "costGlove": 5.0,
+  "costRingRh": 5.0,
+  "costRingLh": 5.0,
+  "costBracelet": 5.0,
+  "costGunbelt": 5.0,
+  "costBelt": 5.0,
+  "costBuckle": 5.0,
+  "costHolster": 5.0,
+  "costPant": 5.0,
+  "costSkirt": 5.0,
+  "costChap": 5.0,
+  "costBoots": 5.0,
+  "costSpurs": 5.0,
+  //end
 
-    "Stores": [{
-            "name": "Coco Chanel",
-            "BlipIcon": 1195729388,
-            "EnterStore": [2554.63, -1169.08, 53.68, 2.0],
-            "ExitWardrobe": [2552.91, -1161.32, 52.68, 89.54],
-            "CameraMain": [2554.943, -1158.621, 53.58861, -2.330096, 0.0, -156.1156],
-            "StoreRoom": [2555.89, -1161.23, 52.6, 12.85],
-            "DoorRoom": [2553.27, -1161.21, 53.60],
-            "NPCStore": [2554.6, -1166.83, 52.7, 180.95]
-        },
-        {
-            "name": "Gucci", // Blackwater
-            "BlipIcon": 1195729388,
-            "EnterStore": [-761.67, -1291.53, 43.86, 2.0],
-            "ExitWardrobe": [-764.82, -1291.39, 42.83, 271.27],
-            "CameraMain": [-766.0403, -1294.163, 44.43269, -17.62717, 0.0, 129.3011],
-            "StoreRoom": [-767.74, -1295.17, 42.84, 304.87],
-            "DoorRoom": [-766.47, -1293.27, 43.84],
-            "NPCStore": [-761.75, -1293.92, 42.84, 357.16]
-        },
-        {
-            "name": "Jeans", // Valentine
-            "BlipIcon": 1195729388,
-            "EnterStore": [-325.99, 774.77, 117.46, 2.0],
-            "ExitWardrobe": [-322.57, 771.95, 116.44, 23.65],
-            "CameraMain": [-326.5601, 776.4949, 122.2295, -15.07608, 0.0, 124.8089],
-            "StoreRoom": [-329.31, 775.11, 120.63, 294.79],
-            "DoorRoom": [-321.92, 764.86, 117.44],
-            "NPCStore": [-325.67, 772.63, 116.44, 11.3]
-        },
-        {
-            "name": "Zupreme", // Rhodes
-            "BlipIcon": 1195729388,
-            "EnterStore": [1326.11, -1288.78, 77.02, 2.0],
-            "ExitWardrobe": [1323.88, -1292.37, 76.03, 267.47],
-            "CameraMain": [2554.943, -1158.621, 53.58861, -2.330096, 0.0, -156.1156],
-            "StoreRoom": [2555.89, -1161.23, 52.6, 12.85],
-            "DoorRoom": [1323.14, -1291.8, 77.03],
-            "NPCStore": [1326.11, -1288.78, 76.02, 194.36]
-        },
-        {
-            "name": "Artidas", // Tumbleweed
-            "BlipIcon": 1195729388,
-            "EnterStore": [-5483.86, -2932.48, -0.4, 2.0],
-            "ExitWardrobe": [-5482.74, -2935.01, -1.4, 80.17],
-            "CameraMain": [2554.943, -1158.621, 53.58861, -2.330096, 0.0, -156.1156],
-            "StoreRoom": [2555.89, -1161.23, 52.6, 12.85],
-            "DoorRoom": [-5481.28, -2935.14, -0.4],
-            "NPCStore": [-5483.86, -2932.48, -1.4, 137.06]
-        },
-        {
-            "name": "Naik", // Armadillo
-            "BlipIcon": 1195729388,
-            "EnterStore": [-3681.88, -2627.49, -13.43, 2.0],
-            "ExitWardrobe": [-3686.44, -2627.48, -14.43, 302.64],
-            "CameraMain": [2554.943, -1158.621, 53.58861, -2.330096, 0.0, -156.1156],
-            "StoreRoom": [2555.89, -1161.23, 52.6, 12.85],
-            "DoorRoom": [-3686.44, -2627.48, -13.43],
-            "NPCStore": [-3681.88, -2627.49, -14.43, 5.85]
-        }
-    ]
+  "Stores": [
+    {
+      "name": "Coco Chanel",
+      "BlipIcon": 1195729388,
+      "EnterStore": [ 2554.63, -1169.08, 53.68, 2.0 ],
+      "ExitWardrobe": [ 2552.91, -1161.32, 52.68, 89.54 ],
+      "CameraMain": [ 2554.943, -1158.621, 53.58861, -2.330096, 0.0, -156.1156 ],
+      "StoreRoom": [ 2555.89, -1161.23, 52.6, 12.85 ],
+      "DoorRoom": [ 2553.27, -1161.21, 53.60 ],
+      "NPCStore": [ 2554.6, -1166.83, 52.7, 180.95 ]
+    },
+    {
+      "name": "Gucci", // Blackwater
+      "BlipIcon": 1195729388,
+      "EnterStore": [ -761.67, -1291.53, 43.86, 2.0 ],
+      "ExitWardrobe": [ -764.82, -1291.39, 42.83, 271.27 ],
+      "CameraMain": [ -766.0403, -1294.163, 44.43269, -17.62717, 0.0, 129.3011 ],
+      "StoreRoom": [ -767.74, -1295.17, 42.84, 304.87 ],
+      "DoorRoom": [ -766.47, -1293.27, 43.84 ],
+      "NPCStore": [ -761.75, -1293.92, 42.84, 357.16 ]
+    },
+    {
+      "name": "Jeans", // Valentine
+      "BlipIcon": 1195729388,
+      "EnterStore": [ -325.99, 774.77, 117.46, 2.0 ],
+      "ExitWardrobe": [ -322.57, 771.95, 116.44, 23.65 ],
+      "CameraMain": [ -326.5601, 776.4949, 122.2295, -15.07608, 0.0, 124.8089 ],
+      "StoreRoom": [ -329.31, 775.11, 120.63, 294.79 ],
+      "DoorRoom": [ -321.92, 764.86, 117.44 ],
+      "NPCStore": [ -325.67, 772.63, 116.44, 11.3 ]
+    },
+    {
+      "name": "Zupreme", // Rhodes
+      "BlipIcon": 1195729388,
+      "EnterStore": [ 1326.11, -1288.78, 77.02, 2.0 ],
+      "ExitWardrobe": [ 1323.88, -1292.37, 76.03, 267.47 ],
+      "CameraMain": [ 2554.943, -1158.621, 53.58861, -2.330096, 0.0, -156.1156 ],
+      "StoreRoom": [ 2555.89, -1161.23, 52.6, 12.85 ],
+      "DoorRoom": [ 1323.14, -1291.8, 77.03 ],
+      "NPCStore": [ 1326.11, -1288.78, 76.02, 194.36 ]
+    },
+    {
+      "name": "Artidas", // Tumbleweed
+      "BlipIcon": 1195729388,
+      "EnterStore": [ -5483.86, -2932.48, -0.4, 2.0 ],
+      "ExitWardrobe": [ -5482.74, -2935.01, -1.4, 80.17 ],
+      "CameraMain": [ 2554.943, -1158.621, 53.58861, -2.330096, 0.0, -156.1156 ],
+      "StoreRoom": [ 2555.89, -1161.23, 52.6, 12.85 ],
+      "DoorRoom": [ -5481.28, -2935.14, -0.4 ],
+      "NPCStore": [ -5483.86, -2932.48, -1.4, 137.06 ]
+    },
+    {
+      "name": "Naik", // Armadillo
+      "BlipIcon": 1195729388,
+      "EnterStore": [ -3681.88, -2627.49, -13.43, 2.0 ],
+      "ExitWardrobe": [ -3686.44, -2627.48, -14.43, 302.64 ],
+      "CameraMain": [ 2554.943, -1158.621, 53.58861, -2.330096, 0.0, -156.1156 ],
+      "StoreRoom": [ 2555.89, -1161.23, 52.6, 12.85 ],
+      "DoorRoom": [ -3686.44, -2627.48, -13.43 ],
+      "NPCStore": [ -3681.88, -2627.49, -14.43, 5.85 ]
+    }
+  ]
 
 }
