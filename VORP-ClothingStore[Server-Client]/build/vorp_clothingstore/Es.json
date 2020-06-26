@@ -10,6 +10,7 @@
     "NoMoney": "No tienes suficiente dinero",
     "SuccessfulBuy": "Te han cobrado", // Muestra el dinero que te cobran
 
+    "MaskValue": "Máscara #",
     "HatsValue": "Sombrero #", // Las opciones del apartado de los sombreros
     "GlassesValue": "Anteojos #", // Las opciones del apartado de los anteojos
     "NeckwearValue": "Prenda #", // Las opciones del apartado de las prendas para el cuello
@@ -52,9 +53,11 @@
     "NoChapsValue": "Sin Zahones", // La opción que da cuando no hay opciones
     "NoBootsValue": "Sin Botas", // La opción que da cuando no hay opciones
     "NoSpursValue": "Sin Espuelas", // La opción que da cuando no hay opciones
+    "NoMaskValue": "Sin Máscara", // La opción que da cuando no hay opciones
 
     "Hats": "Sombreros",
     "Glasses": "Anteojos",
+    "Masks": "Mascaras",
     "Neckwear": "Prendas para el cuello",
     "Ties": "Corbatas",
     "Shirts": "Camisas",

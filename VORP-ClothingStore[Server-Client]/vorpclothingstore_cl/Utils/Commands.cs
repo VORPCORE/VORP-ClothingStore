@@ -250,6 +250,37 @@ namespace vorpclothingstore_cl.Utils
             MenuListItem mListNeckWear = new MenuListItem(GetConfig.Langs["Neckwear"], neckWearType, indexNeckWear, GetConfig.Langs["NeckwearDesc"]); // Añadimos la lista al boton
             mdu.AddMenuItem(mListNeckWear); // Lo añadimos al menu
 
+            List<string> maskType = new List<string>();
+            maskType.Add(GetConfig.Langs["NoMaskValue"]);
+            int indexMaskType = 0;
+
+            if (model == "mp_male")
+            {
+                //Cabellos de Hombre
+                for (float i = 1; i < ClothesUtils.MASK_MALE.Count + 1; i++)
+                {
+                    maskType.Add(GetConfig.Langs["MaskValue"] + i);
+                }
+                if (ClothesUtils.MASK_MALE.IndexOf(ConvertValue(ClothesDB["Mask"].ToString())) != -1)
+                {
+                    indexMaskType = ClothesUtils.MASK_MALE.IndexOf(ConvertValue(ClothesDB["Mask"].ToString())) + 1;
+                }
+            }
+            else
+            {
+                //Cabellos de Mujer
+                for (float i = 1; i < ClothesUtils.MASK_FEMALE.Count + 1; i++)
+                {
+                    maskType.Add(GetConfig.Langs["MaskValue"] + i);
+                }
+                if (ClothesUtils.MASK_FEMALE.IndexOf(ConvertValue(ClothesDB["Mask"].ToString())) != -1)
+                {
+                    indexMaskType = ClothesUtils.MASK_FEMALE.IndexOf(ConvertValue(ClothesDB["Mask"].ToString())) + 1;
+                }
+            }
+            MenuListItem mListMask = new MenuListItem(GetConfig.Langs["Masks"], maskType, indexMaskType, GetConfig.Langs["MasksDesc"]); // Añadimos la lista al boton
+            mdu.AddMenuItem(mListMask); // Lo añadimos al menu
+
             List<string> neckTiesType = new List<string>();
             neckTiesType.Add(GetConfig.Langs["NoTiesValue"]);
             int indexNeckTies = 0;
@@ -895,63 +926,66 @@ namespace vorpclothingstore_cl.Utils
                         SetPlayerComponent(model, _newIndex, 0x5FC29285, "NeckWear", ClothesUtils.NECKWEAR_MALE, ClothesUtils.NECKWEAR_FEMALE);
                         break;
                     case 3:
-                        SetPlayerComponent(model, _newIndex, 0x7A96FACA, "NeckTies", ClothesUtils.NECKTIES_MALE, ClothesUtils.NECKTIES_FEMALE);
+                        SetPlayerComponent(model, _newIndex, 0x7505EF42, "Mask", ClothesUtils.MASK_MALE, ClothesUtils.MASK_FEMALE);
                         break;
                     case 4:
-                        SetPlayerComponent(model, _newIndex, 0x2026C46D, "Shirt", ClothesUtils.SHIRTS_MALE, ClothesUtils.SHIRTS_FEMALE);
+                        SetPlayerComponent(model, _newIndex, 0x7A96FACA, "NeckTies", ClothesUtils.NECKTIES_MALE, ClothesUtils.NECKTIES_FEMALE);
                         break;
                     case 5:
-                        SetPlayerComponent(model, _newIndex, 0x877A2CF7, "Suspender", ClothesUtils.SUSPENDERS_MALE, ClothesUtils.SUSPENDERS_FEMALE);
+                        SetPlayerComponent(model, _newIndex, 0x2026C46D, "Shirt", ClothesUtils.SHIRTS_MALE, ClothesUtils.SHIRTS_FEMALE);
                         break;
                     case 6:
-                        SetPlayerComponent(model, _newIndex, 0x485EE834, "Vest", ClothesUtils.VEST_MALE, ClothesUtils.VEST_FEMALE);
+                        SetPlayerComponent(model, _newIndex, 0x877A2CF7, "Suspender", ClothesUtils.SUSPENDERS_MALE, ClothesUtils.SUSPENDERS_FEMALE);
                         break;
                     case 7:
-                        SetPlayerComponent(model, _newIndex, 0xE06D30CE, "Coat", ClothesUtils.COATS_MALE, ClothesUtils.COATS_FEMALE);
+                        SetPlayerComponent(model, _newIndex, 0x485EE834, "Vest", ClothesUtils.VEST_MALE, ClothesUtils.VEST_FEMALE);
                         break;
                     case 8:
-                        SetPlayerComponent(model, _newIndex, 0xAF14310B, "Poncho", ClothesUtils.PONCHOS_MALE, ClothesUtils.PONCHOS_FEMALE);
+                        SetPlayerComponent(model, _newIndex, 0xE06D30CE, "Coat", ClothesUtils.COATS_MALE, ClothesUtils.COATS_FEMALE);
                         break;
                     case 9:
-                        SetPlayerComponent(model, _newIndex, 0x3C1A74CD, "Cloak", ClothesUtils.CLOAK_MALE, ClothesUtils.CLOAK_FEMALE);
+                        SetPlayerComponent(model, _newIndex, 0xAF14310B, "Poncho", ClothesUtils.PONCHOS_MALE, ClothesUtils.PONCHOS_FEMALE);
                         break;
                     case 10:
-                        SetPlayerComponent(model, _newIndex, 0xEABE0032, "Glove", ClothesUtils.GLOVES_MALE, ClothesUtils.GLOVES_FEMALE);
+                        SetPlayerComponent(model, _newIndex, 0x3C1A74CD, "Cloak", ClothesUtils.CLOAK_MALE, ClothesUtils.CLOAK_FEMALE);
                         break;
                     case 11:
-                        SetPlayerComponent(model, _newIndex, 0x7A6BBD0B, "RingRh", ClothesUtils.RINGS_RH_MALE, ClothesUtils.RINGS_RH_FEMALE);
+                        SetPlayerComponent(model, _newIndex, 0xEABE0032, "Glove", ClothesUtils.GLOVES_MALE, ClothesUtils.GLOVES_FEMALE);
                         break;
                     case 12:
-                        SetPlayerComponent(model, _newIndex, 0xF16A1D23, "RingLh", ClothesUtils.RINGS_LH_MALE, ClothesUtils.RINGS_LH_FEMALE);
+                        SetPlayerComponent(model, _newIndex, 0x7A6BBD0B, "RingRh", ClothesUtils.RINGS_RH_MALE, ClothesUtils.RINGS_RH_FEMALE);
                         break;
                     case 13:
-                        SetPlayerComponent(model, _newIndex, 0x7BC10759, "Bracelet", ClothesUtils.BRACELETS_MALE, ClothesUtils.BRACELETS_FEMALE);
+                        SetPlayerComponent(model, _newIndex, 0xF16A1D23, "RingLh", ClothesUtils.RINGS_LH_MALE, ClothesUtils.RINGS_LH_FEMALE);
                         break;
                     case 14:
-                        SetPlayerComponent(model, _newIndex, 0x9B2C8B89, "Gunbelt", ClothesUtils.GUNBELT_MALE, ClothesUtils.GUNBELT_FEMALE);
+                        SetPlayerComponent(model, _newIndex, 0x7BC10759, "Bracelet", ClothesUtils.BRACELETS_MALE, ClothesUtils.BRACELETS_FEMALE);
                         break;
                     case 15:
-                        SetPlayerComponent(model, _newIndex, 0xA6D134C6, "Belt", ClothesUtils.BELT_MALE, ClothesUtils.BELT_FEMALE);
+                        SetPlayerComponent(model, _newIndex, 0x9B2C8B89, "Gunbelt", ClothesUtils.GUNBELT_MALE, ClothesUtils.GUNBELT_FEMALE);
                         break;
                     case 16:
-                        SetPlayerComponent(model, _newIndex, 0xFAE9107F, "Buckle", ClothesUtils.BUCKLE_MALE, ClothesUtils.BUCKLE_FEMALE);
+                        SetPlayerComponent(model, _newIndex, 0xA6D134C6, "Belt", ClothesUtils.BELT_MALE, ClothesUtils.BELT_FEMALE);
                         break;
                     case 17:
-                        SetPlayerComponent(model, _newIndex, 0xB6B6122D, "Holster", ClothesUtils.HOLSTERS_S_MALE, ClothesUtils.HOLSTERS_S_FEMALE);
+                        SetPlayerComponent(model, _newIndex, 0xFAE9107F, "Buckle", ClothesUtils.BUCKLE_MALE, ClothesUtils.BUCKLE_FEMALE);
                         break;
                     case 18:
-                        SetPlayerComponent(model, _newIndex, 0x1D4C528A, "Pant", ClothesUtils.PANTS_MALE, ClothesUtils.PANTS_FEMALE);
+                        SetPlayerComponent(model, _newIndex, 0xB6B6122D, "Holster", ClothesUtils.HOLSTERS_S_MALE, ClothesUtils.HOLSTERS_S_FEMALE);
                         break;
                     case 19:
-                        SetPlayerComponent(model, _newIndex, 0xA0E3AB7F, "Skirt", ClothesUtils.SKIRTS_FEMALE, ClothesUtils.SKIRTS_FEMALE);
+                        SetPlayerComponent(model, _newIndex, 0x1D4C528A, "Pant", ClothesUtils.PANTS_MALE, ClothesUtils.PANTS_FEMALE);
                         break;
                     case 20:
-                        SetPlayerComponent(model, _newIndex, 0x3107499B, "Chap", ClothesUtils.CHAPS_MALE, ClothesUtils.CHAPS_FEMALE);
+                        SetPlayerComponent(model, _newIndex, 0xA0E3AB7F, "Skirt", ClothesUtils.SKIRTS_FEMALE, ClothesUtils.SKIRTS_FEMALE);
                         break;
                     case 21:
-                        SetPlayerComponent(model, _newIndex, 0x777EC6EF, "Boots", ClothesUtils.BOOTS_MALE, ClothesUtils.BOOTS_FEMALE);
+                        SetPlayerComponent(model, _newIndex, 0x3107499B, "Chap", ClothesUtils.CHAPS_MALE, ClothesUtils.CHAPS_FEMALE);
                         break;
                     case 22:
+                        SetPlayerComponent(model, _newIndex, 0x777EC6EF, "Boots", ClothesUtils.BOOTS_MALE, ClothesUtils.BOOTS_FEMALE);
+                        break;
+                    case 23:
                         SetPlayerComponent(model, _newIndex, 0x18729F39, "Spurs", ClothesUtils.SPURS_MALE, ClothesUtils.SPURS_FEMALE);
                         break;
                 }
@@ -969,6 +1003,10 @@ namespace vorpclothingstore_cl.Utils
                 if (ConvertValue(ClothesDB["NeckWear"].ToString()) != ConvertValue(clothesPlayer["NeckWear"].ToString()))
                 {
                     totalCost += double.Parse(GetConfig.Config["costNeckWear"].ToString());
+                }
+                if (ConvertValue(ClothesDB["Mask"].ToString()) != ConvertValue(clothesPlayer["Mask"].ToString()))
+                {
+                    totalCost += double.Parse(GetConfig.Config["costMask"].ToString());
                 }
                 if (ConvertValue(ClothesDB["NeckTies"].ToString()) != ConvertValue(clothesPlayer["NeckTies"].ToString()))
                 {
