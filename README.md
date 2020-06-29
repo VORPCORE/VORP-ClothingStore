@@ -12,3 +12,6 @@ Clothing Store for VORP Core
 * Add ```ensure vorp_clothingstore``` to your ```server.cfg``` file
 * To change the language go to ```resources/vorp_clothingstore/Config``` and change the default language
 * Now you are ready!
+
+## Wiki
+[Wiki VORP Clothing Stores](http://docs.vorpcore.com:3000/vorp-clothingstore)
