@@ -1,5 +1,5 @@
 # VORP-ClothingStore
-Clothing Store
+Clothing Store for VORP Core
 
 ## Requirements
 - [VORP CORE](https://github.com/VORPCORE/VORP-Core/releases)
@@ -10,5 +10,5 @@ Clothing Store
 * [Download the lastest version of VORP ClothingStore](https://github.com/VORPCORE/VORP-ClothingStore/releases)
 * Copy and paste ```vorp_clothingstore``` folder to ```resources/vorp_clothingstore```
 * Add ```ensure vorp_clothingstore``` to your ```server.cfg``` file
-* To change the language go to ```resources/vorp_clothingstore``` and change the default language
+* To change the language go to ```resources/vorp_clothingstore/Config``` and change the default language
 * Now you are ready!
