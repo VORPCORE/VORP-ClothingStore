@@ -29,10 +29,11 @@ namespace vorpclothingstore_cl.Utils
 
         static Dictionary<string, object> clothesPlayer = new Dictionary<string, object>() {
             { "Hat", 0 },
+            { "Mask", 0 },
             { "EyeWear", 0 },
             { "NeckWear", 0 },
             { "NeckTies", 0 },
-            { "Shirt", 0 }, // oh shit this need a refactor
+            { "Shirt", 0 },
             { "Suspender", 0 },
             { "Vest", 0 },
             { "Coat", 0 },
