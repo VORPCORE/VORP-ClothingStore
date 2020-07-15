@@ -10,6 +10,13 @@
     "NoMoney": "You do not have enough money",
     "SuccessfulBuy": "You have been charged", // Shows how much money you have paid
 
+    "TitleMenuOutfits": "Outfits",
+    "SubTitleMenuOutfits": "Wear again your saved clothes",
+
+    "PlaceHolderNewOutfit": "If you want to save the outfit, name it and save it",
+    "ButtonNewOutfit": "Save Outfit",
+
+
     "MaskValue": "Face Mask #",
     "HatsValue": "Hat #", // The options of the hats section
     "GlassesValue": "Glasses #", // The options of the glasses section

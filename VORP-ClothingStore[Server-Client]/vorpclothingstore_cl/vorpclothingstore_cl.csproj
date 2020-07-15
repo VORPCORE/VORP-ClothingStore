@@ -52,6 +52,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Menus\MainMenu.cs" />
+    <Compile Include="Menus\OutfitsMenu.cs" />
     <Compile Include="Utils\ClearCaches.cs" />
     <Compile Include="Utils\ClothesUtils.cs" />
     <Compile Include="Utils\Commands.cs" />

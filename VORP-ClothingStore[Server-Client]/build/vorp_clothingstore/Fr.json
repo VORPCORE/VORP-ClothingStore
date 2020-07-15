@@ -10,6 +10,12 @@
     "NoMoney": "Vous n'avez pas assez d'argent",
     "SuccessfulBuy": "Vous avez été accusé", // Montre l'argent que vous avez payé
 
+    "TitleMenuOutfits": "Tenue",
+    "SubTitleMenuOutfits": "Portez à nouveau vos vêtements enregistrés",
+
+    "PlaceHolderNewOutfit": "Si vous voulez enregistrer la tenue, nommez-la et enregistrez-la",
+    "ButtonNewOutfit": "Enregistrer la tenue",
+
     "MaskValue": "Masque #",
     "HatsValue": "Chapeau #", // Les options de la section chapeaux
     "GlassesValue": "Lunettes #", // Les options dans la section verres
