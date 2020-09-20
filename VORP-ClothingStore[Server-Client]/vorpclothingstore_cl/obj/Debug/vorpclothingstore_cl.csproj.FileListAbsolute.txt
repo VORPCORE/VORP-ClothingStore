@@ -4,3 +4,10 @@ E:\VORP-Repos\VORP-ClothingStore\VORP-ClothingStore[Server-Client]\vorpclothings
 E:\VORP-Repos\VORP-ClothingStore\VORP-ClothingStore[Server-Client]\vorpclothingstore_cl\obj\Debug\vorpclothingstore_cl.net.dll
 E:\VORP-Repos\VORP-ClothingStore\VORP-ClothingStore[Server-Client]\vorpclothingstore_cl\obj\Debug\vorpclothingstore_cl.net.pdb
 E:\VORP-Repos\VORP-ClothingStore\VORP-ClothingStore[Server-Client]\vorpclothingstore_cl\obj\Debug\vorpclothingstore_cl.csprojAssemblyReference.cache
+C:\Users\Bozoweed\Desktop\redem pour nerio\VORP-ClothingStore\VORP-ClothingStore[Server-Client]\vorpclothingstore_cl\obj\Debug\vorpclothingstore_cl.csprojAssemblyReference.cache
+C:\Users\Bozoweed\Desktop\redem pour nerio\VORP-ClothingStore\VORP-ClothingStore[Server-Client]\vorpclothingstore_cl\obj\Debug\vorpclothingstore_cl.csproj.CoreCompileInputs.cache
+C:\Users\Bozoweed\Desktop\redem pour nerio\VORP-ClothingStore\VORP-ClothingStore[Server-Client]\vorpclothingstore_cl\obj\Debug\vorpclothingstore_cl.net.dll
+C:\Users\Bozoweed\Desktop\redem pour nerio\VORP-ClothingStore\VORP-ClothingStore[Server-Client]\vorpclothingstore_cl\obj\Debug\vorpclothingstore_cl.net.pdb
+C:\Users\Bozoweed\Desktop\redem pour nerio\VORP-ClothingStore\VORP-ClothingStore[Server-Client]\build\vorp_clothingstore\vorpclothingstore_cl.net.dll
+C:\Users\Bozoweed\Desktop\redem pour nerio\VORP-ClothingStore\VORP-ClothingStore[Server-Client]\build\vorp_clothingstore\vorpclothingstore_cl.net.pdb
+C:\Users\Bozoweed\Desktop\redem pour nerio\VORP-ClothingStore\VORP-ClothingStore[Server-Client]\vorpclothingstore_cl\obj\Debug\vorpclothingstore_cl.csproj.CopyComplete

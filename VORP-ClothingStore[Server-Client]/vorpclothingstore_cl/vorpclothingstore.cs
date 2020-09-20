@@ -18,10 +18,8 @@ namespace vorpclothingstore_cl
 
         public static async Task InitStores()
         {
-            await Delay(10000);
             string ped = "S_M_M_Tailor_01";
-            uint HashPed = (uint)API.GetHashKey(ped);
-            await Miscellanea.LoadModel(HashPed);
+            uint HashPed = await Miscellanea.GetHash(ped);
 
             foreach (var store in GetConfig.Config["Stores"])
             {
@@ -40,15 +38,14 @@ namespace vorpclothingstore_cl
                 StoreBlips.Add(_blip);
 
                 int _PedShop = API.CreatePed(HashPed, Pedx, Pedy, Pedz, Pedheading, false, true, true, true);
+                while (!API.DoesEntityExist(_PedShop))
+                    await Delay(200);
                 Function.Call((Hash)0x283978A15512B2FE, _PedShop, true);
                 StorePeds.Add(_PedShop);
                 API.SetEntityNoCollisionEntity(API.PlayerPedId(), _PedShop, false);
                 API.SetEntityCanBeDamaged(_PedShop, false);
                 API.SetEntityInvincible(_PedShop, true);
-                await Delay(1000);
                 API.FreezeEntityPosition(_PedShop, true);
-
-                await Delay(100);
             }
 
 
@@ -71,7 +68,7 @@ namespace vorpclothingstore_cl
 
                 if (API.GetDistanceBetweenCoords(pCoords.X, pCoords.Y, pCoords.Z, x, y, z, false) <= radius)
                 {
-                    await DrawTxt(GetConfig.Langs["PressToOpen"], 0.5f, 0.9f, 0.7f, 0.7f, 255, 255, 255, 255, true, true);
+                     DrawTxt(GetConfig.Langs["PressToOpen"], 0.5f, 0.9f, 0.7f, 0.7f, 255, 255, 255, 255, true, true);
                     if (API.IsControlJustPressed(2, 0xD9D0E1C0))
                     {
                         await Commands.MoveToCoords(i);
@@ -82,7 +79,7 @@ namespace vorpclothingstore_cl
 
         }
 
-        public async Task DrawTxt(string text, float x, float y, float fontscale, float fontsize, int r, int g, int b, int alpha, bool textcentred, bool shadow)
+        public void DrawTxt(string text, float x, float y, float fontscale, float fontsize, int r, int g, int b, int alpha, bool textcentred, bool shadow)
         {
             long str = Function.Call<long>(Hash._CREATE_VAR_STRING, 10, "LITERAL_STRING", text);
             Function.Call(Hash.SET_TEXT_SCALE, fontscale, fontsize);
