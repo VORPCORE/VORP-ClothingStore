@@ -1051,10 +1051,8 @@ namespace vorpclothingstore_cl.Menus
             {
                 // Code in here gets triggered whenever the menu is closed.
                 Debug.WriteLine($"OnMenuClose: [{_menu}]");
-                if (!Utils.Commands.isBuy)
-                {
-                    Utils.Commands.startBuyCloths(Utils.Commands.isBuy);
-                }
+                Commands.startBuyCloths(Utils.Commands.isBuy);
+                
             };
 
         }

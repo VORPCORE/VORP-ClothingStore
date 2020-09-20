@@ -38,6 +38,7 @@ namespace vorpclothingstore_cl.Menus
             {
                 Utils.Commands.SetOutfit(_index);
             };
+            
 
         }
 
