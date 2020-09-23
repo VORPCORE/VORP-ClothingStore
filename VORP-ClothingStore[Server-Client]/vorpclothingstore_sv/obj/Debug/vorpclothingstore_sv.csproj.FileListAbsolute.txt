@@ -5,3 +5,11 @@ E:\VORP-Repos\VORP-ClothingStore\VORP-ClothingStore[Server-Client]\vorpclothings
 E:\VORP-Repos\VORP-ClothingStore\VORP-ClothingStore[Server-Client]\vorpclothingstore_sv\obj\Debug\vorpclothingstore_sv.net.pdb
 E:\VORP-Repos\VORP-ClothingStore\VORP-ClothingStore[Server-Client]\vorpclothingstore_sv\obj\Debug\vorpclothingstore_sv.csproj.CopyComplete
 E:\VORP-Repos\VORP-ClothingStore\VORP-ClothingStore[Server-Client]\build\vorp_clothingstore\Config.json
+D:\VORP-Repos\VORP-ClothingStore\VORP-ClothingStore[Server-Client]\build\vorp_clothingstore\Config.json
+D:\VORP-Repos\VORP-ClothingStore\VORP-ClothingStore[Server-Client]\build\vorp_clothingstore\vorpclothingstore_sv.net.dll
+D:\VORP-Repos\VORP-ClothingStore\VORP-ClothingStore[Server-Client]\build\vorp_clothingstore\vorpclothingstore_sv.net.pdb
+D:\VORP-Repos\VORP-ClothingStore\VORP-ClothingStore[Server-Client]\vorpclothingstore_sv\obj\Debug\vorpclothingstore_sv.csprojAssemblyReference.cache
+D:\VORP-Repos\VORP-ClothingStore\VORP-ClothingStore[Server-Client]\vorpclothingstore_sv\obj\Debug\vorpclothingstore_sv.csproj.CoreCompileInputs.cache
+D:\VORP-Repos\VORP-ClothingStore\VORP-ClothingStore[Server-Client]\vorpclothingstore_sv\obj\Debug\vorpclothingstore_sv.csproj.CopyComplete
+D:\VORP-Repos\VORP-ClothingStore\VORP-ClothingStore[Server-Client]\vorpclothingstore_sv\obj\Debug\vorpclothingstore_sv.net.dll
+D:\VORP-Repos\VORP-ClothingStore\VORP-ClothingStore[Server-Client]\vorpclothingstore_sv\obj\Debug\vorpclothingstore_sv.net.pdb

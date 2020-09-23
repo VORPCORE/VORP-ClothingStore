@@ -6,12 +6,17 @@ namespace vorpclothingstore_sv
 {
     public class vorpclothingstore_sv : BaseScript
     {
-        //            vorpcharacter:setPlayerCompChange
+        public static dynamic CORE;
+
         public vorpclothingstore_sv()
         {
             EventHandlers["vorpclothingstore:getPlayerCloths"] += new Action<Player>(getPlayerCloths);
             EventHandlers["vorpclothingstore:buyPlayerCloths"] += new Action<Player, double, string, bool, string>(buyPlayerCloths);
             EventHandlers["vorpclothingstore:setOutfit"] += new Action<Player, string>(LoadOutfit);
+            TriggerEvent("getCore", new Action<dynamic>((dic) =>
+            {
+                CORE = dic;
+            }));
         }
 
         private void LoadOutfit([FromSource]Player source,  string json)
@@ -25,57 +30,53 @@ namespace vorpclothingstore_sv
 
             string sid = "steam:" + source.Identifiers["steam"];
 
-            TriggerEvent("vorp:getCharacter", _source, new Action<dynamic>((user) =>
+            dynamic UserCharacter = CORE.getUser(int.Parse(source.Handle)).getUsedCharacter;
+           
+            double money = UserCharacter.money;
+
+            if (totalCost <= money)
             {
-                double money = user.money;
+                UserCharacter.removeCurrency(0, totalCost);
 
-                if (totalCost <= money)
+                UserCharacter.updateComps(jsonCloths);
+
+                int charIdentifier = UserCharacter.charIdentifier;
+
+                if (saveOut)
                 {
-                    TriggerEvent("vorp:removeMoney", _source, 0, totalCost);
-
-                    Exports["ghmattimysql"].execute($"UPDATE characters SET compPlayer = ? WHERE identifier=?", new[] { jsonCloths, sid });
-
-                    if (saveOut)
-                    {
-                        Exports["ghmattimysql"].execute($"INSERT INTO outfits (identifier,title,comps) VALUES (?,?,?)", new[] { sid, nameOut, jsonCloths });
-                    }
-
-                    source.TriggerEvent($"vorpclothingstore:startBuyCloths", true);
-                    source.TriggerEvent("vorp:Tip", LoadConfig.Langs["SuccessfulBuy"] + $" ${totalCost}", 4000);
-                }
-                else
-                {
-                    source.TriggerEvent("vorp:Tip", LoadConfig.Langs["NoMoney"], 4000);
-                    source.TriggerEvent($"vorpclothingstore:startBuyCloths", false);
+                    Exports["ghmattimysql"].execute($"INSERT INTO outfits (identifier,charidentifier,title,comps) VALUES (?,?,?,?)", new object[] { sid, charIdentifier, nameOut, jsonCloths });
                 }
 
-            }));
+                source.TriggerEvent($"vorpclothingstore:startBuyCloths", true);
+                source.TriggerEvent("vorp:Tip", LoadConfig.Langs["SuccessfulBuy"] + $" ${totalCost}", 4000);
+            }
+            else
+            {
+                source.TriggerEvent("vorp:Tip", LoadConfig.Langs["NoMoney"], 4000);
+                source.TriggerEvent($"vorpclothingstore:startBuyCloths", false);
+            }
+
         }
 
         private void getPlayerCloths([FromSource]Player source)
         {
+            dynamic UserCharacter = CORE.getUser(int.Parse(source.Handle)).getUsedCharacter;
             int _source = int.Parse(source.Handle);
+            int charIdentifier = UserCharacter.charIdentifier;
 
-            TriggerEvent("vorpcharacter:getPlayerComps", _source, new Action<dynamic>((cb) =>
-            {
+            string comps = UserCharacter.comps;
+            string skin = UserCharacter.skin;
 
-                source.TriggerEvent($"{API.GetCurrentResourceName()}:LoadYourCloths", cb.cloths, cb.skins);
-
-            }));
+            source.TriggerEvent($"{API.GetCurrentResourceName()}:LoadYourCloths", comps, skin);
 
             string sid = "steam:" + source.Identifiers["steam"];
 
-            Exports["ghmattimysql"].execute("SELECT * FROM outfits WHERE identifier = ?", new[] { sid }, new Action<dynamic>((result) =>
+            Exports["ghmattimysql"].execute("SELECT * FROM outfits WHERE `identifier` = ? AND `charidentifier` = ?", new object[] { sid, charIdentifier }, new Action<dynamic>((result) =>
             {
-                if (result.Count == 0)
-                {
-                    Debug.WriteLine("User not have outfits");
-                }
-                else
+                if (result.Count != 0)
                 {
                     source.TriggerEvent($"{API.GetCurrentResourceName()}:LoadYourOutfits", result);
                 }
-
             }));
 
         }
