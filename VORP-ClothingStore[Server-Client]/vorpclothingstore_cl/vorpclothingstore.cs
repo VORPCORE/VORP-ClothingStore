@@ -69,7 +69,7 @@ namespace vorpclothingstore_cl
                 float z = float.Parse(GetConfig.Config["Stores"][i]["EnterStore"][2].ToString());
                 float radius = float.Parse(GetConfig.Config["Stores"][i]["EnterStore"][3].ToString());
 
-                if (API.GetDistanceBetweenCoords(pCoords.X, pCoords.Y, pCoords.Z, x, y, z, false) <= radius)
+                if (API.GetDistanceBetweenCoords(pCoords.X, pCoords.Y, pCoords.Z, x, y, z, true) <= radius)
                 {
                     await DrawTxt(GetConfig.Langs["PressToOpen"], 0.5f, 0.9f, 0.7f, 0.7f, 255, 255, 255, 255, true, true);
                     if (API.IsControlJustPressed(2, 0xD9D0E1C0))

@@ -75,6 +75,12 @@ namespace vorpclothingstore_cl.Utils
             }
         }
 
+        public static void DeleteOutfit(int currentIndex)
+        {
+            TriggerServerEvent("vorpclothingstore:deleteOutfit", MyOutfits.ElementAt(currentIndex).Key);
+            MyOutfits.Remove(MyOutfits.ElementAt(currentIndex).Key);
+        }
+
         private void LoadYourOutfits(dynamic outfits_db)
         {
             MyOutfits.Clear();
@@ -1181,7 +1187,7 @@ namespace vorpclothingstore_cl.Utils
         {
             if (!completedBuy)
             {
-                await Delay(1000);
+                await Delay(3000);
                 if (MenuController.IsAnyMenuOpen())
                 {
                     return;

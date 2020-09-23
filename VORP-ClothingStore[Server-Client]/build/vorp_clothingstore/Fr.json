@@ -2,6 +2,9 @@
 
     "PressToOpen": "Appuyez [~e~Espace~q~] pour accéder à la boutique", // Titre du Menu
 
+    "TitleMenuOutfitsUseBtn": "Porter une tenue",
+    "TitleMenuOutfitsDeleteBtn": "Supprimer la tenue",
+
     "TitleMenuClothes": "Dressing", // Titre du Menu
     "SubTitleMenuClothes": "Habillez votre personnage", // Description du Menu
 

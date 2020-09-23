@@ -2,6 +2,9 @@
 
     "PressToOpen": "Press [~e~Space~q~] to access the store", // Menu title
 
+    "TitleMenuOutfitsUseBtn": "Wear Outfit",
+    "TitleMenuOutfitsDeleteBtn": "Delete Outfit",
+
     "TitleMenuClothes": "Dressing room", // Menu title
     "SubTitleMenuClothes": "Dress up your character", // Menu description
 

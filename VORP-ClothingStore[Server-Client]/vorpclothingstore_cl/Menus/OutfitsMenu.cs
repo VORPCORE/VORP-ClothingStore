@@ -14,6 +14,7 @@ namespace vorpclothingstore_cl.Menus
     class OutfitsMenu
     {
         private static Menu outfitsMenu = new Menu(GetConfig.Langs["TitleMenuOutfits"], GetConfig.Langs["SubTitleMenuOutfits"]);
+        private static Menu outfitsSubMenu = new Menu("", GetConfig.Langs["SubTitleMenuOutfits"]);
         private static bool setupDone = false;
 
         private static void SetupMenu()
@@ -25,18 +26,51 @@ namespace vorpclothingstore_cl.Menus
             MenuController.EnableMenuToggleKeyOnController = false;
             MenuController.MenuToggleKey = (Control)0;
 
+
+            //Outfits
+            MenuController.AddSubmenu(outfitsMenu, outfitsSubMenu);
+
+            MenuItem subMenuOutfitUseBtn = new MenuItem(GetConfig.Langs["TitleMenuOutfitsUseBtn"], GetConfig.Langs["TitleMenuOutfitsUseBtn"])
+            {
+                RightIcon = MenuItem.Icon.TICK
+            };
+
+            MenuItem subMenuOutfitDeleteBtn = new MenuItem(GetConfig.Langs["TitleMenuOutfitsDeleteBtn"], GetConfig.Langs["TitleMenuOutfitsDeleteBtn"])
+            {
+                
+            };
+
+            outfitsSubMenu.AddMenuItem(subMenuOutfitUseBtn);
+            outfitsSubMenu.AddMenuItem(subMenuOutfitDeleteBtn);
+
             outfitsMenu.OnMenuOpen += (_menu) => 
             {
                 outfitsMenu.ClearMenuItems();
                 foreach (var a in Utils.Commands.MyOutfits)
                 {
-                    outfitsMenu.AddMenuItem(new MenuItem(a.Value.Item1));
+                    MenuItem _itemMenu = new MenuItem(a.Value.Item1)
+                    {
+
+                    };
+                    outfitsMenu.AddMenuItem(_itemMenu);
+                    MenuController.BindMenuItem(outfitsMenu, outfitsSubMenu, _itemMenu);
                 }
             };
 
-            outfitsMenu.OnItemSelect += async (_menu, _item, _index) =>
+            outfitsSubMenu.OnItemSelect += async (_menu, _item, _index) =>
             {
-                Utils.Commands.SetOutfit(_index);
+                if(_index == 0)
+                {
+                    Utils.Commands.SetOutfit(outfitsMenu.CurrentIndex);
+                }
+                else
+                {
+                    outfitsMenu.RemoveMenuItem(outfitsMenu.CurrentIndex);
+                    outfitsSubMenu.CloseMenu();
+                    outfitsMenu.CloseMenu();
+                    MainMenu.GetMenu().OpenMenu();
+                    Utils.Commands.DeleteOutfit(outfitsMenu.CurrentIndex);
+                }
             };
 
         }

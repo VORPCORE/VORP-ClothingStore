@@ -13,10 +13,18 @@ namespace vorpclothingstore_sv
             EventHandlers["vorpclothingstore:getPlayerCloths"] += new Action<Player>(getPlayerCloths);
             EventHandlers["vorpclothingstore:buyPlayerCloths"] += new Action<Player, double, string, bool, string>(buyPlayerCloths);
             EventHandlers["vorpclothingstore:setOutfit"] += new Action<Player, string>(LoadOutfit);
-            TriggerEvent("getCore", new Action<dynamic>((dic) =>
+            EventHandlers["vorpclothingstore:deleteOutfit"] += new Action<Player, int>(DeleteOutfit);
+            TriggerEvent("getCore", new Action<dynamic>((dic) => 
             {
                 CORE = dic;
             }));
+        }
+
+        private void DeleteOutfit([FromSource] Player source, int id)
+        {
+            string sid = "steam:" + source.Identifiers["steam"];
+
+            Exports["ghmattimysql"].execute("DELETE FROM outfits WHERE identifier=? AND id=?", new object[] { sid, id });
         }
 
         private void LoadOutfit([FromSource]Player source,  string json)
