@@ -12,3 +12,4 @@ D:\VORP-Repos\VORP-ClothingStore\VORP-ClothingStore[Server-Client]\vorpclothings
 D:\VORP-Repos\VORP-ClothingStore\VORP-ClothingStore[Server-Client]\vorpclothingstore_sv\obj\Debug\vorpclothingstore_sv.csproj.CopyComplete
 D:\VORP-Repos\VORP-ClothingStore\VORP-ClothingStore[Server-Client]\vorpclothingstore_sv\obj\Debug\vorpclothingstore_sv.net.dll
 D:\VORP-Repos\VORP-ClothingStore\VORP-ClothingStore[Server-Client]\vorpclothingstore_sv\obj\Debug\vorpclothingstore_sv.net.pdb
+D:\VORP-Repos\VORP-ClothingStore\VORP-ClothingStore[Server-Client]\vorpclothingstore_sv\obj\Debug\vorpclothingstore_sv.csprojAssemblyReference.cache

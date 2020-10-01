@@ -252,6 +252,28 @@ namespace vorpclothingstore_cl.Menus
             MenuListItem mListCoats = new MenuListItem(GetConfig.Langs["Coats"], coatsType, indexCoat, GetConfig.Langs["CoatsDesc"]); // Añadimos la lista al boton
             mainMenu.AddMenuItem(mListCoats); // Lo añadimos al menu
 
+            List<string> coatsClosedType = new List<string>();
+            coatsClosedType.Add(GetConfig.Langs["NoCoatsValue"]);
+
+            if (API.IsPedMale(API.PlayerPedId()))
+            {
+                //Cabellos de Hombre
+                for (float i = 1; i < ClothesUtils.COATS_CLOSED_MALE.Count + 1; i++)
+                {
+                    coatsClosedType.Add(GetConfig.Langs["CoatsValue"] + i);
+                }
+            }
+            else
+            {
+                //Cabellos de Mujer
+                for (float i = 1; i < ClothesUtils.COATS_CLOSED_FEMALE.Count + 1; i++)
+                {
+                    coatsClosedType.Add(GetConfig.Langs["CoatsValue"] + i);
+                }
+            }
+            MenuListItem mListCoatsClosed = new MenuListItem(GetConfig.Langs["CoatsClosed"], coatsClosedType, 0, GetConfig.Langs["CoatsDesc"]); // Añadimos la lista al boton
+            mainMenu.AddMenuItem(mListCoatsClosed); // Lo añadimos al menu
+
             List<string> ponchosType = new List<string>();
             ponchosType.Add(GetConfig.Langs["NoPonchosValue"]);
             int indexPoncho = 0;
@@ -674,6 +696,10 @@ namespace vorpclothingstore_cl.Menus
                     {
                         mListCoats.ListIndex = ClothesUtils.COATS_MALE.IndexOf(Utils.Commands.ConvertValue(Utils.Commands.ClothesDB["Coat"].ToString())) + 1;
                     }
+                    if (ClothesUtils.COATS_CLOSED_MALE.IndexOf(Utils.Commands.ConvertValue(Utils.Commands.ClothesDB["CoatClosed"].ToString())) != -1)
+                    {
+                        mListCoatsClosed.ListIndex = ClothesUtils.COATS_CLOSED_MALE.IndexOf(Utils.Commands.ConvertValue(Utils.Commands.ClothesDB["CoatClosed"].ToString())) + 1;
+                    }
                     if (ClothesUtils.PONCHOS_MALE.IndexOf(Utils.Commands.ConvertValue(Utils.Commands.ClothesDB["Poncho"].ToString())) != -1)
                     {
                         mListPonchos.ListIndex = ClothesUtils.PONCHOS_MALE.IndexOf(Utils.Commands.ConvertValue(Utils.Commands.ClothesDB["Poncho"].ToString())) + 1;
@@ -769,6 +795,10 @@ namespace vorpclothingstore_cl.Menus
                     if (ClothesUtils.COATS_FEMALE.IndexOf(Utils.Commands.ConvertValue(Utils.Commands.ClothesDB["Coat"].ToString())) != -1)
                     {
                         mListCoats.ListIndex = ClothesUtils.COATS_FEMALE.IndexOf(Utils.Commands.ConvertValue(Utils.Commands.ClothesDB["Coat"].ToString())) + 1;
+                    }
+                    if (ClothesUtils.COATS_CLOSED_FEMALE.IndexOf(Utils.Commands.ConvertValue(Utils.Commands.ClothesDB["CoatClosed"].ToString())) != -1)
+                    {
+                        mListCoatsClosed.ListIndex = ClothesUtils.COATS_CLOSED_FEMALE.IndexOf(Utils.Commands.ConvertValue(Utils.Commands.ClothesDB["CoatClosed"].ToString())) + 1;
                     }
                     if (ClothesUtils.PONCHOS_FEMALE.IndexOf(Utils.Commands.ConvertValue(Utils.Commands.ClothesDB["Poncho"].ToString())) != -1)
                     {
@@ -877,48 +907,51 @@ namespace vorpclothingstore_cl.Menus
                         Utils.Commands.SetPlayerComponent(Utils.Commands.model, _newIndex, 0xE06D30CE, "Coat", ClothesUtils.COATS_MALE, ClothesUtils.COATS_FEMALE);
                         break;
                     case 9:
-                        Utils.Commands.SetPlayerComponent(Utils.Commands.model, _newIndex, 0xAF14310B, "Poncho", ClothesUtils.PONCHOS_MALE, ClothesUtils.PONCHOS_FEMALE);
+                        Utils.Commands.SetPlayerComponent(Utils.Commands.model, _newIndex, 0x0662AC34, "CoatClosed", ClothesUtils.COATS_CLOSED_MALE, ClothesUtils.COATS_CLOSED_FEMALE);
                         break;
                     case 10:
-                        Utils.Commands.SetPlayerComponent(Utils.Commands.model, _newIndex, 0x3C1A74CD, "Cloak", ClothesUtils.CLOAK_MALE, ClothesUtils.CLOAK_FEMALE);
+                        Utils.Commands.SetPlayerComponent(Utils.Commands.model, _newIndex, 0xAF14310B, "Poncho", ClothesUtils.PONCHOS_MALE, ClothesUtils.PONCHOS_FEMALE);
                         break;
                     case 11:
-                        Utils.Commands.SetPlayerComponent(Utils.Commands.model, _newIndex, 0xEABE0032, "Glove", ClothesUtils.GLOVES_MALE, ClothesUtils.GLOVES_FEMALE);
+                        Utils.Commands.SetPlayerComponent(Utils.Commands.model, _newIndex, 0x3C1A74CD, "Cloak", ClothesUtils.CLOAK_MALE, ClothesUtils.CLOAK_FEMALE);
                         break;
                     case 12:
-                        Utils.Commands.SetPlayerComponent(Utils.Commands.model, _newIndex, 0x7A6BBD0B, "RingRh", ClothesUtils.RINGS_RH_MALE, ClothesUtils.RINGS_RH_FEMALE);
+                        Utils.Commands.SetPlayerComponent(Utils.Commands.model, _newIndex, 0xEABE0032, "Glove", ClothesUtils.GLOVES_MALE, ClothesUtils.GLOVES_FEMALE);
                         break;
                     case 13:
-                        Utils.Commands.SetPlayerComponent(Utils.Commands.model, _newIndex, 0xF16A1D23, "RingLh", ClothesUtils.RINGS_LH_MALE, ClothesUtils.RINGS_LH_FEMALE);
+                        Utils.Commands.SetPlayerComponent(Utils.Commands.model, _newIndex, 0x7A6BBD0B, "RingRh", ClothesUtils.RINGS_RH_MALE, ClothesUtils.RINGS_RH_FEMALE);
                         break;
                     case 14:
-                        Utils.Commands.SetPlayerComponent(Utils.Commands.model, _newIndex, 0x7BC10759, "Bracelet", ClothesUtils.BRACELETS_MALE, ClothesUtils.BRACELETS_FEMALE);
+                        Utils.Commands.SetPlayerComponent(Utils.Commands.model, _newIndex, 0xF16A1D23, "RingLh", ClothesUtils.RINGS_LH_MALE, ClothesUtils.RINGS_LH_FEMALE);
                         break;
                     case 15:
-                        Utils.Commands.SetPlayerComponent(Utils.Commands.model, _newIndex, 0x9B2C8B89, "Gunbelt", ClothesUtils.GUNBELT_MALE, ClothesUtils.GUNBELT_FEMALE);
+                        Utils.Commands.SetPlayerComponent(Utils.Commands.model, _newIndex, 0x7BC10759, "Bracelet", ClothesUtils.BRACELETS_MALE, ClothesUtils.BRACELETS_FEMALE);
                         break;
                     case 16:
-                        Utils.Commands.SetPlayerComponent(Utils.Commands.model, _newIndex, 0xA6D134C6, "Belt", ClothesUtils.BELT_MALE, ClothesUtils.BELT_FEMALE);
+                        Utils.Commands.SetPlayerComponent(Utils.Commands.model, _newIndex, 0x9B2C8B89, "Gunbelt", ClothesUtils.GUNBELT_MALE, ClothesUtils.GUNBELT_FEMALE);
                         break;
                     case 17:
-                        Utils.Commands.SetPlayerComponent(Utils.Commands.model, _newIndex, 0xFAE9107F, "Buckle", ClothesUtils.BUCKLE_MALE, ClothesUtils.BUCKLE_FEMALE);
+                        Utils.Commands.SetPlayerComponent(Utils.Commands.model, _newIndex, 0xA6D134C6, "Belt", ClothesUtils.BELT_MALE, ClothesUtils.BELT_FEMALE);
                         break;
                     case 18:
-                        Utils.Commands.SetPlayerComponent(Utils.Commands.model, _newIndex, 0xB6B6122D, "Holster", ClothesUtils.HOLSTERS_S_MALE, ClothesUtils.HOLSTERS_S_FEMALE);
+                        Utils.Commands.SetPlayerComponent(Utils.Commands.model, _newIndex, 0xFAE9107F, "Buckle", ClothesUtils.BUCKLE_MALE, ClothesUtils.BUCKLE_FEMALE);
                         break;
                     case 19:
-                        Utils.Commands.SetPlayerComponent(Utils.Commands.model, _newIndex, 0x1D4C528A, "Pant", ClothesUtils.PANTS_MALE, ClothesUtils.PANTS_FEMALE);
+                        Utils.Commands.SetPlayerComponent(Utils.Commands.model, _newIndex, 0xB6B6122D, "Holster", ClothesUtils.HOLSTERS_S_MALE, ClothesUtils.HOLSTERS_S_FEMALE);
                         break;
                     case 20:
-                        Utils.Commands.SetPlayerComponent(Utils.Commands.model, _newIndex, 0xA0E3AB7F, "Skirt", ClothesUtils.SKIRTS_FEMALE, ClothesUtils.SKIRTS_FEMALE);
+                        Utils.Commands.SetPlayerComponent(Utils.Commands.model, _newIndex, 0x1D4C528A, "Pant", ClothesUtils.PANTS_MALE, ClothesUtils.PANTS_FEMALE);
                         break;
                     case 21:
-                        Utils.Commands.SetPlayerComponent(Utils.Commands.model, _newIndex, 0x3107499B, "Chap", ClothesUtils.CHAPS_MALE, ClothesUtils.CHAPS_FEMALE);
+                        Utils.Commands.SetPlayerComponent(Utils.Commands.model, _newIndex, 0xA0E3AB7F, "Skirt", ClothesUtils.SKIRTS_FEMALE, ClothesUtils.SKIRTS_FEMALE);
                         break;
                     case 22:
-                        Utils.Commands.SetPlayerComponent(Utils.Commands.model, _newIndex, 0x777EC6EF, "Boots", ClothesUtils.BOOTS_MALE, ClothesUtils.BOOTS_FEMALE);
+                        Utils.Commands.SetPlayerComponent(Utils.Commands.model, _newIndex, 0x3107499B, "Chap", ClothesUtils.CHAPS_MALE, ClothesUtils.CHAPS_FEMALE);
                         break;
                     case 23:
+                        Utils.Commands.SetPlayerComponent(Utils.Commands.model, _newIndex, 0x777EC6EF, "Boots", ClothesUtils.BOOTS_MALE, ClothesUtils.BOOTS_FEMALE);
+                        break;
+                    case 24:
                         Utils.Commands.SetPlayerComponent(Utils.Commands.model, _newIndex, 0x18729F39, "Spurs", ClothesUtils.SPURS_MALE, ClothesUtils.SPURS_FEMALE);
                         break;
                 }
@@ -960,6 +993,10 @@ namespace vorpclothingstore_cl.Menus
                 if (Utils.Commands.ConvertValue(Utils.Commands.ClothesDB["Coat"].ToString()) != Utils.Commands.ConvertValue(Utils.Commands.clothesPlayer["Coat"].ToString()))
                 {
                     totalCost += double.Parse(GetConfig.Config["costCoat"].ToString());
+                }
+                if (Utils.Commands.ConvertValue(Utils.Commands.ClothesDB["CoatClosed"].ToString()) != Utils.Commands.ConvertValue(Utils.Commands.clothesPlayer["CoatClosed"].ToString()))
+                {
+                    totalCost += double.Parse(GetConfig.Config["costCoatClosed"].ToString());
                 }
                 if (Utils.Commands.ConvertValue(Utils.Commands.ClothesDB["Poncho"].ToString()) != Utils.Commands.ConvertValue(Utils.Commands.clothesPlayer["Poncho"].ToString()))
                 {
@@ -1039,7 +1076,7 @@ namespace vorpclothingstore_cl.Menus
             {
                 // Code in here would get executed whenever an item is pressed.
                 Debug.WriteLine($"OnItemSelect: [{_menu}, {_item}, {_index}]");
-                if (_index == 25)
+                if (_index == 26)
                 {
                     Utils.Commands.isBuy = true;
                     Utils.Commands.FinishBuy(Utils.Commands.isBuy, totalCost);

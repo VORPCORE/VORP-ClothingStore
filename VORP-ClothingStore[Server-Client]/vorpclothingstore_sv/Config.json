@@ -12,6 +12,7 @@
   "costSuspender": 5.0,
   "costVest": 5.0,
   "costCoat": 5.0,
+  "costCoatClosed": 5.0,
   "costPoncho": 5.0,
   "costCloak": 5.0,
   "costGlove": 5.0,

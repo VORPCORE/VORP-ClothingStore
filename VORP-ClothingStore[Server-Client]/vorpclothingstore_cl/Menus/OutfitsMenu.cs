@@ -66,10 +66,9 @@ namespace vorpclothingstore_cl.Menus
                 else
                 {
                     outfitsMenu.RemoveMenuItem(outfitsMenu.CurrentIndex);
-                    outfitsSubMenu.CloseMenu();
-                    outfitsMenu.CloseMenu();
-                    MainMenu.GetMenu().OpenMenu();
                     Utils.Commands.DeleteOutfit(outfitsMenu.CurrentIndex);
+                    MenuController.CloseAllMenus();
+                    MainMenu.GetMenu().OpenMenu();
                 }
             };
 

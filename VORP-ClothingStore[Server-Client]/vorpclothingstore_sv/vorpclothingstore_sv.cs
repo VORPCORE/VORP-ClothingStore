@@ -38,7 +38,7 @@ namespace vorpclothingstore_sv
 
             string sid = "steam:" + source.Identifiers["steam"];
 
-            dynamic UserCharacter = CORE.getUser(int.Parse(source.Handle)).getUsedCharacter;
+            dynamic UserCharacter = CORE.getUser(_source).getUsedCharacter;
            
             double money = UserCharacter.money;
 
@@ -46,7 +46,7 @@ namespace vorpclothingstore_sv
             {
                 UserCharacter.removeCurrency(0, totalCost);
 
-                UserCharacter.updateComps(jsonCloths);
+                TriggerEvent("vorpcharacter:setPlayerCompChange", _source, jsonCloths);
 
                 int charIdentifier = UserCharacter.charIdentifier;
 
