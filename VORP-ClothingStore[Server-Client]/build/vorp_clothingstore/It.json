@@ -1,0 +1,122 @@
+{
+
+    "PressToOpen": "Premi [~e~Spazio~q~] per accedere al negozio", // Menu title
+
+    "TitleMenuOutfitsUseBtn": "Indossa abiti",
+    "TitleMenuOutfitsDeleteBtn": "Togli abiti",
+
+    "TitleMenuClothes": "Camerino", // Menu title
+    "SubTitleMenuClothes": "Vesti il tuo personaggio", // Menu description
+
+    "NoExistValue": "Non esiste", // The option it gives when there is no option
+
+    "NoMoney": "Non hai abbastanza denaro",
+    "SuccessfulBuy": "Sei stato accusato", // Shows how much money you have paid
+
+    "TitleMenuOutfits": "Abiti",
+    "SubTitleMenuOutfits": "Indossa nuovamente i tuoi vestiti salvati",
+
+    "PlaceHolderNewOutfit": "Se vuoi salvare il vestiario, dagli un nome e salvalo",
+    "ButtonNewOutfit": "Salva vestiario",
+
+
+    "MaskValue": "Maschera #",
+    "HatsValue": "Cappello #", // The options of the hats section
+    "GlassesValue": "Occhiali #", // The options of the glasses section
+    "NeckwearValue": "Colletto #", // The options of the neckwear section
+    "TiesValue": "Cravatta #", // The options of the ties section
+    "ShirtsValue": "Maglietta #", // The options of the shirts section
+    "SuspendersValue": "Bretelle #", // The options of the suspenders section
+    "VestsValue": "Veste #", // The options of the vests section
+    "CoatsValue": "Cappotto #", // The options of the coats section
+    "PonchosValue": "Poncio #", // The options of the ponchos section
+    "CloaksValue": "Mantello #", // The options of the cloaks section
+    "GlovesValue": "Guanti #", // The options of the gloves section
+    "RingsValue": "Anello #", // The options of the rings section
+    "BraceletsValue": "Braccialetto #", // The options of the bracelets section
+    "HolstersValue": "Fondina #", // The options of the holsters section
+    "BeltsValue": "Cintura #", // The options of the belts section
+    "BucklesValue": "Fibbia #", // The options of the buckles section
+    "PantsValue": "Pantaloni #", // The options of the pants section
+    "SkirtsValue": "Gonna #", // The options of the skirts section
+    "ChapsValue": "Chaps #", // The options of the chaps section
+    "BootsValue": "Stivali #", // The options of the boots section
+    "SpursValue": "Speroni #", // The options of the spurs section
+    "NoHatsValue": "Senza cappello", // The option it gives when you do not wear a hat
+    "NoGlassesValue": "Senza occhiali", // The option it gives when you do not wear glasses
+    "NoNeckwearValue": "Senza colletto", // The option it gives when you do not wear neckwear
+    "NoTiesValue": "Senza cravatta", // The option it gives when you do not wear a tie
+    "NoShirtsValue": "Senza maglietta", // The option it gives when you do not wear a shirt
+    "NoSuspendersValue": "Senza bretelle", // The option it gives when you do not wear suspenders
+    "NoVestsValue": "Senza veste", // The option it gives when you do not wear a vest
+    "NoCoatsValue": "Senza cappotto", // The option it gives when you do not wear a coat
+    "NoPonchosValue": "Senza poncio", // The option it gives when you do not wear a poncho
+    "NoCloaksValue": "Senza mantello", // The option it gives when you do not wear a cloak
+    "NoGlovesValue": "Senza guanti", // The option it gives when you do not wear gloves
+    "NoRingsValue": "Senza anello", // The option it gives when you do not wear a ring
+    "NoBraceletsValue": "Senza braccialetto", // The option it gives when you do not wear a bracelet
+    "NoHolstersValue": "Senza fondina", // The option it gives when you do not wear a holster
+    "NoBeltsValue": "Senza cintura", // The option it gives when you do not wear a belt
+    "NoBucklesValue": "Senza fibbia", // The option it gives when you do not wear a buckle
+    "NoPantsValue": "Senza pantaloni", // The option it gives when you do not wear pants
+    "NoSkirtsValue": "Senza gonna", // The option it gives when you do not wear a skirt
+    "NoChapsValue": "Senza chaps", // The option it gives when you do not wear chaps
+    "NoBootsValue": "Senza stivali", // The option it gives when you do not wear boots
+    "NoSpursValue": "Senza speroni", // The option it gives when you do not wear spurs
+    "NoMaskValue": "Senza maschera", // The option it gives when you do not wear a face mask
+
+    "Hats": "Cappelli",
+    "Glasses": "Occhiali",
+    "Masks": "Maschere",
+    "Neckwear": "Colletti",
+    "Ties": "Cravatte",
+    "Shirts": "Magliette",
+    "Suspenders": "Bretelle",
+    "Vests": "Vesti",
+    "Coats": "Cappotti",
+    "CoatsClosed": "Cappotti chiusi",
+    "Ponchos": "Ponci",
+    "Cloaks": "Mantelli",
+    "Gloves": "Guanti",
+    "RightRings": "Anelli mano destra",
+    "LeftRings": "Anelli mano sinistra",
+    "Bracelets": "Braccialetti",
+    "PrimaryHolsters": "Fondina primaria",
+    "Belts": "Cinture",
+    "Buckles": "Fibbie",
+    "SecondaryHolsters": "Fondina secondaria",
+    "Pants": "Pantaloni",
+    "Skirts": "Gonne",
+    "Chaps": "Chaps",
+    "Boots": "Stivali",
+    "Spurs": "Speroni",
+
+    "Finish": "Vesti il personaggio", // Confirms the options of the Menu
+
+    //Descriptions of the clothing Menu sections
+    "HatsDesc": "Scegli il cappello",
+    "GlassesDesc": "Scegli gli occhiali",
+    "MasksDesc": "Scegli se indossare una maschera",
+    "NeckwearDesc": "Scegli il colletto",
+    "TiesDesc": "Scegli la cravatta",
+    "ShirtsDesc": "Scegli la maglietta",
+    "SuspendersDesc": "Scegli le bretelle",
+    "VestsDesc": "Scegli la veste",
+    "CoatsDesc": "Scegli il cappotto",
+    "PonchosDesc": "Scegli il poncio",
+    "CloaksDesc": "Scegli il mantello",
+    "GlovesDesc": "Scegli i guanti",
+    "RightRingsDesc": "Scegli gli anelli per la mano destra",
+    "LeftRingsDesc": "Scegli gli anelli per la mano sinistra",
+    "BraceletsDesc": "Scegli il braccialetto",
+    "PrimaryHolstersDesc": "Scegli la fondina primaria",
+    "BeltsDesc": "Scegli la cintura",
+    "BucklesDesc": "Scegli la fibbia",
+    "SecondaryHolstersDesc": "Scegli la fondina secondaria",
+    "PantsDesc": "Scegli i pantaloni",
+    "SkirtsDesc": "Scegli la gonna",
+    "ChapsDesc": "Scegli i chaps",
+    "BootsDesc": "Scegli gli stivali",
+    "SpursDesc": "Scegli gli speroni",
+    "FinishDesc": "Assicurati di aver scelto tutto correttamente."
+}
