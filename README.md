@@ -2,9 +2,9 @@
 Clothing Store for VORP Core
 
 ## Requirements
-- [VORP Core](https://github.com/VORPCORE/VORP-Core/releases)
-- [VORP Inputs](https://github.com/VORPCORE/VORP-Inputs/releases)
-- [VORP Character](https://github.com/VORPCORE/VORP-Character/releases)
+- [VORP-Core](https://github.com/VORPCORE/VORP-Core/releases)
+- [VORP-Inputs](https://github.com/VORPCORE/VORP-Inputs/releases)
+- [VORP-Character](https://github.com/VORPCORE/VORP-Character/releases)
 
 ## How to install
 * [Download the lastest version of VORP ClothingStore](https://github.com/VORPCORE/VORP-ClothingStore/releases)
