@@ -1,7 +1,7 @@
 {
 
     "PressToOpen": "Appuyez [~e~Espace~q~] pour accéder à la boutique", // Titre du Menu
-
+    "PressGuide": "Tourner <-[A] [D]-> | Caméra [W] o [S]",
     "TitleMenuOutfitsUseBtn": "Porter une tenue",
     "TitleMenuOutfitsDeleteBtn": "Supprimer la tenue",
 

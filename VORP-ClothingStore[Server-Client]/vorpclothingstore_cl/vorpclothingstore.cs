@@ -82,7 +82,7 @@ namespace vorpclothingstore_cl
 
         }
 
-        public async Task DrawTxt(string text, float x, float y, float fontscale, float fontsize, int r, int g, int b, int alpha, bool textcentred, bool shadow)
+        public static async Task DrawTxt(string text, float x, float y, float fontscale, float fontsize, int r, int g, int b, int alpha, bool textcentred, bool shadow)
         {
             long str = Function.Call<long>(Hash._CREATE_VAR_STRING, 10, "LITERAL_STRING", text);
             Function.Call(Hash.SET_TEXT_SCALE, fontscale, fontsize);

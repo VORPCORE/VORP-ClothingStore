@@ -19,7 +19,13 @@ namespace vorpclothingstore_cl.Utils
         public static string model = "";
         public static bool isBuy = false;
         public static int CamWardrove;
+        public static int CamUp;
+        public static int CamMid;
+        public static int CamBot;
+        public static int cameraIndex = 0;
+        public static bool onstore = false;
         public static int ActuallyShop;
+        public static float DressHeading = 0f;
         public static Dictionary<int, Tuple<string, string>> MyOutfits = new Dictionary<int, Tuple<string, string>>();
 
         public Commands()
@@ -123,12 +129,34 @@ namespace vorpclothingstore_cl.Utils
             float Playery = float.Parse(GetConfig.Config["Stores"][shop]["StoreRoom"][1].ToString());
             float Playerz = float.Parse(GetConfig.Config["Stores"][shop]["StoreRoom"][2].ToString());
             float Playerheading = float.Parse(GetConfig.Config["Stores"][shop]["StoreRoom"][3].ToString());
-            float Camerax = float.Parse(GetConfig.Config["Stores"][shop]["CameraMain"][0].ToString());
-            float Cameray = float.Parse(GetConfig.Config["Stores"][shop]["CameraMain"][1].ToString());
-            float Cameraz = float.Parse(GetConfig.Config["Stores"][shop]["CameraMain"][2].ToString());
-            float CameraRotx = float.Parse(GetConfig.Config["Stores"][shop]["CameraMain"][3].ToString());
-            float CameraRoty = float.Parse(GetConfig.Config["Stores"][shop]["CameraMain"][4].ToString());
-            float CameraRotz = float.Parse(GetConfig.Config["Stores"][shop]["CameraMain"][5].ToString());
+            DressHeading = Playerheading;
+            float CameraMainx = float.Parse(GetConfig.Config["Stores"][shop]["Cameras"][0][0].ToString());
+            float CameraMainy = float.Parse(GetConfig.Config["Stores"][shop]["Cameras"][0][1].ToString());
+            float CameraMainz = float.Parse(GetConfig.Config["Stores"][shop]["Cameras"][0][2].ToString());
+            float CameraMainRotx = float.Parse(GetConfig.Config["Stores"][shop]["Cameras"][0][3].ToString());
+            float CameraMainRoty = float.Parse(GetConfig.Config["Stores"][shop]["Cameras"][0][4].ToString());
+            float CameraMainRotz = float.Parse(GetConfig.Config["Stores"][shop]["Cameras"][0][5].ToString());
+
+            float CameraChestx = float.Parse(GetConfig.Config["Stores"][shop]["Cameras"][1][0].ToString());
+            float CameraChesty = float.Parse(GetConfig.Config["Stores"][shop]["Cameras"][1][1].ToString());
+            float CameraChestz = float.Parse(GetConfig.Config["Stores"][shop]["Cameras"][1][2].ToString());
+            float CameraChestRotx = float.Parse(GetConfig.Config["Stores"][shop]["Cameras"][1][3].ToString());
+            float CameraChestRoty = float.Parse(GetConfig.Config["Stores"][shop]["Cameras"][1][4].ToString());
+            float CameraChestRotz = float.Parse(GetConfig.Config["Stores"][shop]["Cameras"][1][5].ToString());
+
+            float CameraBeltx = float.Parse(GetConfig.Config["Stores"][shop]["Cameras"][2][0].ToString());
+            float CameraBelty = float.Parse(GetConfig.Config["Stores"][shop]["Cameras"][2][1].ToString());
+            float CameraBeltz = float.Parse(GetConfig.Config["Stores"][shop]["Cameras"][2][2].ToString());
+            float CameraBeltRotx = float.Parse(GetConfig.Config["Stores"][shop]["Cameras"][2][3].ToString());
+            float CameraBeltRoty = float.Parse(GetConfig.Config["Stores"][shop]["Cameras"][2][4].ToString());
+            float CameraBeltRotz = float.Parse(GetConfig.Config["Stores"][shop]["Cameras"][2][5].ToString());
+
+            float CameraBootsx = float.Parse(GetConfig.Config["Stores"][shop]["Cameras"][3][0].ToString());
+            float CameraBootsy = float.Parse(GetConfig.Config["Stores"][shop]["Cameras"][3][1].ToString());
+            float CameraBootsz = float.Parse(GetConfig.Config["Stores"][shop]["Cameras"][3][2].ToString());
+            float CameraBootsRotx = float.Parse(GetConfig.Config["Stores"][shop]["Cameras"][3][3].ToString());
+            float CameraBootsRoty = float.Parse(GetConfig.Config["Stores"][shop]["Cameras"][3][4].ToString());
+            float CameraBootsRotz = float.Parse(GetConfig.Config["Stores"][shop]["Cameras"][3][5].ToString());
 
             TriggerEvent("vorp:setInstancePlayer", true);
 
@@ -161,9 +189,14 @@ namespace vorpclothingstore_cl.Utils
             FreezeEntityPosition(PlayerPedId(), true);
             SetEntityCoords(vorpclothingstore.StorePeds[shop], Pedx, Pedy, Pedz, false, false, false, false);
             SetEntityHeading(vorpclothingstore.StorePeds[shop], Pedheading);
+
             await Delay(2000);
 
-            CamWardrove = CreateCamWithParams("DEFAULT_SCRIPTED_CAMERA", Camerax, Cameray, Cameraz, CameraRotx, CameraRoty, CameraRotz, 50.00f, false, 0);
+            CamWardrove = CreateCamWithParams("DEFAULT_SCRIPTED_CAMERA", CameraMainx, CameraMainy, CameraMainz, CameraMainRotx, CameraMainRoty, CameraMainRotz, 50.00f, false, 0);
+            CamUp = CreateCamWithParams("DEFAULT_SCRIPTED_CAMERA", CameraChestx, CameraChesty, CameraChestz, CameraChestRotx, CameraChestRoty, CameraChestRotz, 50.00f, false, 0);
+            CamMid = CreateCamWithParams("DEFAULT_SCRIPTED_CAMERA", CameraBeltx, CameraBelty, CameraBeltz, CameraBeltRotx, CameraBeltRoty, CameraBeltRotz, 50.00f, false, 0);
+            CamBot = CreateCamWithParams("DEFAULT_SCRIPTED_CAMERA", CameraBootsx, CameraBootsy, CameraBootsz, CameraBootsRotx, CameraBootsRoty, CameraBootsRotz, 50.00f, false, 0);
+
             SetCamActive(CamWardrove, true);
             RenderScriptCams(true, true, 500, true, true, 0);
             FreezeEntityPosition(vorpclothingstore.StorePeds[shop], true);
@@ -173,7 +206,91 @@ namespace vorpclothingstore_cl.Utils
             NetworkSetInSpectatorMode(false, PlayerPedId());
             model = SkinsDB["sex"].ToString();
             Menus.MainMenu.GetMenu().OpenMenu();
+            onstore = true;
+        }
 
+        public static void SwapCameras(int index)
+        {
+            switch (index)
+            {
+                case 0:
+                    API.SetCamActive(CamWardrove, true);
+                    API.SetCamActive(CamBot, false);
+                    API.SetCamActive(CamUp, false);
+                    API.RenderScriptCams(true, true, 200, true, true, 0);
+                    break;
+                case 1:
+                    API.SetCamActive(CamUp, true);
+                    API.SetCamActive(CamWardrove, false);
+                    API.SetCamActive(CamMid, false);
+                    API.RenderScriptCams(true, true, 200, true, true, 0);
+                    break;
+                case 2:
+                    API.SetCamActive(CamMid, true);
+                    API.SetCamActive(CamUp, false);
+                    API.SetCamActive(CamBot, false);
+                    API.RenderScriptCams(true, true, 200, true, true, 0);
+                    break;
+                case 3:
+                    API.SetCamActive(CamBot, true);
+                    API.SetCamActive(CamMid, false);
+                    API.SetCamActive(CamWardrove, false);
+                    API.RenderScriptCams(true, true, 200, true, true, 0);
+                    break;
+            }
+        }
+
+        [Tick]
+        public static async Task onStoreCameras()
+        {
+            if (onstore)
+            {
+                if (API.IsControlJustPressed(0, 0x8FD015D8))
+                {
+                    cameraIndex += 1;
+                    if (cameraIndex > 4)
+                    {
+                        cameraIndex = 0;
+                    }
+
+                    SwapCameras(cameraIndex);
+                    await Delay(0);
+                }
+                if (API.IsControlJustPressed(0, 0xD27782E3))
+                {
+                    cameraIndex -= 1;
+                    if (cameraIndex < 0)
+                    {
+                        cameraIndex = 4;
+                    }
+
+                    SwapCameras(cameraIndex);
+                    await Delay(0);
+                }
+                if (API.IsControlPressed(0, 0x7065027D))
+                {
+                    DressHeading += 1.0f;
+                    API.SetEntityHeading(API.PlayerPedId(), DressHeading);
+                    await Delay(0);
+                }
+                if (API.IsControlPressed(0, 0xB4E465B4))
+                {
+                    DressHeading -= 1.0f;
+                    API.SetEntityHeading(API.PlayerPedId(), DressHeading);
+                    await Delay(0);
+                }
+
+            }
+        }
+
+        [Tick]
+        public async Task onStoreInfo()
+        {
+            if (onstore)
+            {
+                await vorpclothingstore.DrawTxt(GetConfig.Langs["PressGuide"], 0.5f, 0.9f, 0.7f, 0.7f, 255, 255, 255, 255, true, true);
+                API.ClearPedTasks(API.PlayerPedId(), 1, 1);
+            }
         }
 
         public static async void FinishBuy(bool buy, double cost)
@@ -221,6 +338,8 @@ namespace vorpclothingstore_cl.Utils
             {
                 TriggerServerEvent("vorpcharacter:getPlayerSkin");
             }
+
+            onstore = false;
 
             float PedExitx = float.Parse(GetConfig.Config["Stores"][ActuallyShop]["ExitWardrobe"][0].ToString());
             float PedExity = float.Parse(GetConfig.Config["Stores"][ActuallyShop]["ExitWardrobe"][1].ToString());

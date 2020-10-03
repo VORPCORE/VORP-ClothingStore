@@ -1,7 +1,7 @@
 {
 
   "PressToOpen": "Pulsa [~e~Espacio~q~] para acceder a la tienda", // Título del Menú
-
+  "PressGuide": "Rotar <-[A] [D]-> | Cámaras [W] o [S]",
   "TitleMenuOutfitsUseBtn": "Ponerse este outfit",
   "TitleMenuOutfitsDeleteBtn": "Eliminar Outfit",
 

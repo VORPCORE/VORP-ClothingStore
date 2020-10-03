@@ -22,7 +22,7 @@ namespace vorpclothingstore_sv
 
             LoadConfigAndLang();
         }
-
+      
         private void LoadConfigAndLang()
         {
             if (File.Exists($"{resourcePath}/Config.json"))
