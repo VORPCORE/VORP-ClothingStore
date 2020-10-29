@@ -904,14 +904,14 @@ namespace vorpclothingstore_cl.Menus
                         Utils.Commands.SetPlayerComponent(Utils.Commands.model, _newIndex, 0x485EE834, "Vest", ClothesUtils.VEST_MALE, ClothesUtils.VEST_FEMALE);
                         break;
                     case 8:
-                        Utils.Commands.SetPlayerComponent(Utils.Commands.model, _newIndex, 0xE06D30CE, "Coat", ClothesUtils.COATS_MALE, ClothesUtils.COATS_FEMALE);
                         mListCoatsClosed.ListIndex = 0;
                         Utils.Commands.SetPlayerComponent(Utils.Commands.model, 0, 0x0662AC34, "CoatClosed", ClothesUtils.COATS_CLOSED_MALE, ClothesUtils.COATS_CLOSED_FEMALE);
+                        Utils.Commands.SetPlayerComponent(Utils.Commands.model, _newIndex, 0xE06D30CE, "Coat", ClothesUtils.COATS_MALE, ClothesUtils.COATS_FEMALE);
                         break;
                     case 9:
-                        Utils.Commands.SetPlayerComponent(Utils.Commands.model, _newIndex, 0x0662AC34, "CoatClosed", ClothesUtils.COATS_CLOSED_MALE, ClothesUtils.COATS_CLOSED_FEMALE);
                         mListCoats.ListIndex = 0;
-                        Utils.Commands.SetPlayerComponent(Utils.Commands.model, _newIndex, 0xE06D30CE, "Coat", ClothesUtils.COATS_MALE, ClothesUtils.COATS_FEMALE);
+                        Utils.Commands.SetPlayerComponent(Utils.Commands.model, 0, 0xE06D30CE, "Coat", ClothesUtils.COATS_MALE, ClothesUtils.COATS_FEMALE);
+                        Utils.Commands.SetPlayerComponent(Utils.Commands.model, _newIndex, 0x0662AC34, "CoatClosed", ClothesUtils.COATS_CLOSED_MALE, ClothesUtils.COATS_CLOSED_FEMALE);
                         break;
                     case 10:
                         Utils.Commands.SetPlayerComponent(Utils.Commands.model, _newIndex, 0xAF14310B, "Poncho", ClothesUtils.PONCHOS_MALE, ClothesUtils.PONCHOS_FEMALE);
