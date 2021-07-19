@@ -28,6 +28,11 @@
   "costChap": 5.0,
   "costBoots": 5.0,
   "costSpurs": 5.0,
+  "costSpats": 5.0,
+  "costGauntlets": 5.0,
+  "costLoadouts": 5.0,
+  "costAccessories": 5.0,
+  "costSatchels": 5.0,
   //end
 
   "Stores": [

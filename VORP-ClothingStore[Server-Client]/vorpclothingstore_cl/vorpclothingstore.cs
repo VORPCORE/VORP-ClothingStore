@@ -45,6 +45,7 @@ namespace vorpclothingstore_cl
                 API.SetEntityNoCollisionEntity(API.PlayerPedId(), _PedShop, false);
                 API.SetEntityCanBeDamaged(_PedShop, false);
                 API.SetEntityInvincible(_PedShop, true);
+                API.SetBlockingOfNonTemporaryEvents(_PedShop, true);
                 await Delay(1000);
                 API.FreezeEntityPosition(_PedShop, true);
 

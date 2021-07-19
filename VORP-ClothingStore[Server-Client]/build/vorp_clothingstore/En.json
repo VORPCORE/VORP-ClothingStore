@@ -20,17 +20,17 @@
     "ButtonNewOutfit": "Save Outfit",
 
 
-    "MaskValue": "Face Mask #",
+    "MaskValue": "Mask #",
     "HatsValue": "Hat #", // The options of the hats section
     "GlassesValue": "Glasses #", // The options of the glasses section
-    "NeckwearValue": "Garment #", // The options of the neckwear section
+    "NeckwearValue": "Neckwear #", // The options of the neckwear section
     "TiesValue": "Tie #", // The options of the ties section
     "ShirtsValue": "Shirt #", // The options of the shirts section
     "SuspendersValue": "Suspenders #", // The options of the suspenders section
     "VestsValue": "Vest #", // The options of the vests section
     "CoatsValue": "Coat #", // The options of the coats section
     "PonchosValue": "Poncho #", // The options of the ponchos section
-    "CloaksValue": "Cap #", // The options of the cloaks section
+    "CloaksValue": "Cloak #", // The options of the cloaks section
     "GlovesValue": "Gloves #", // The options of the gloves section
     "RingsValue": "Ring #", // The options of the rings section
     "BraceletsValue": "Bracelet #", // The options of the bracelets section
@@ -38,10 +38,16 @@
     "BeltsValue": "Belt #", // The options of the belts section
     "BucklesValue": "Buckle #", // The options of the buckles section
     "PantsValue": "Pants #", // The options of the pants section
-    "SkirtsValue": "Falda #", // The options of the skirts section
+    "SkirtsValue": "Skirt #", // The options of the skirts section
     "ChapsValue": "Chaps #", // The options of the chaps section
     "BootsValue": "Boots #", // The options of the boots section
     "SpursValue": "Spurs #", // The options of the spurs section
+    "SpatsValue": "Spats #", // The options of the spats section
+    "GauntletsValue": "Gauntlets #", // The options of the gauntlets section
+    "LoadoutsValue": "Loadouts #", // The options of the gauntlets section
+    "AccessoriesValue": "Accessories #", // The options of the gauntlets section
+    "SatchelsValue": "Satchels #", // The options of the gauntlets section
+    "GunbeltAccsValue": "Gunbelt Accs #",
     "NoHatsValue": "Without a Hat", // The option it gives when you do not wear a hat
     "NoGlassesValue": "Without Glasses", // The option it gives when you do not wear glasses
     "NoNeckwearValue": "Without Neckwear", // The option it gives when you do not wear neckwear
@@ -63,11 +69,17 @@
     "NoChapsValue": "Without Chaps", // The option it gives when you do not wear chaps
     "NoBootsValue": "Without Boots", // The option it gives when you do not wear boots
     "NoSpursValue": "Without Spurs", // The option it gives when you do not wear spurs
+    "NoSpatsValue": "Without Spats", // The option it gives when you do not wear spurs
+    "NoGauntletsValue": "Without Gauntlets", // The option it gives when you do not wear spurs
+    "NoLoadoutsValue": "Without Loadouts", // The option it gives when you do not wear spurs
+    "NoAccessoriesValue": "Without Accessories", // The option it gives when you do not wear spurs
+    "NoSatchelsValue": "Without Satchels", // The option it gives when you do not wear spurs
+    "NoGunbeltAccsValue": "Without Gunbelt Accs",
     "NoMaskValue": "Without Face Mask", // The option it gives when you do not wear a face mask
 
     "Hats": "Hats",
     "Glasses": "Glasses",
-    "Masks": "Face Masks",
+    "Masks": "Masks",
     "Neckwear": "Neckwear",
     "Ties": "Ties",
     "Shirts": "Shirts",
@@ -90,13 +102,19 @@
     "Chaps": "Chaps",
     "Boots": "Boots",
     "Spurs": "Spurs",
+    "Spats": "Spats",
+    "Gauntlets": "Gauntlets",
+    "Loadouts": "Loadouts",
+    "Accessories": "Accessories",
+    "Satchels": "Satchels",
+    "GunbeltAccs": "Gunbelt Accs",
 
     "Finish": "Dress up character", // Confirms the options of the Menu
 
     //Descriptions of the clothing Menu sections
     "HatsDesc": "Choose the hat",
     "GlassesDesc": "Choose the glasses",
-    "MasksDesc": "Choose if you want to wear a face mask",
+    "MasksDesc": "Choose if you want to wear a mask",
     "NeckwearDesc": "Choose the neckwear",
     "TiesDesc": "Choose the tie",
     "ShirtsDesc": "Choose the shirt",
@@ -118,5 +136,11 @@
     "ChapsDesc": "Choose the chaps",
     "BootsDesc": "Choose the boots",
     "SpursDesc": "Choose the spurs",
+    "SpatsDesc": "Choose the spats",
+    "GauntletsDesc": "Choose the gauntlets",
+    "LoadoutsDesc": "Choose the loadouts",
+    "AccessoriesDesc": "Choose the accessories",
+    "SatchelsDesc": "Choose the satchel",
+    "GunbeltAccsDesc": "choose the gunbelt accs",
     "FinishDesc": "Make sure you have chosen everything correctly."
 }

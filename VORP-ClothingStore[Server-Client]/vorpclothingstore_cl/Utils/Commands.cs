@@ -68,6 +68,12 @@ namespace vorpclothingstore_cl.Utils
             { "Chap", 0 },
             { "Boots", 0 },
             { "Spurs", 0 },
+            { "Spats", 0 },
+            { "Gauntlets", 0 },
+            { "Loadouts", 0 },
+            { "Accessories", 0 },
+            { "Satchels", 0  },
+            { "GunbeltAccs", 0 },
             { "CoatClosed", 0 }
         };
 

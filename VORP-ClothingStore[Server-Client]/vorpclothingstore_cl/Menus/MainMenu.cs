@@ -33,24 +33,21 @@ namespace vorpclothingstore_cl.Menus
 
             if (API.IsPedMale(API.PlayerPedId()))
             {
-                //Cabellos de Hombre
                 for (float i = 1; i < ClothesUtils.HATS_MALE.Count + 1; i++)
                 {
                     hatType.Add(GetConfig.Langs["HatsValue"] + i);
                 }
-
             }
             else
             {
-                //Cabellos de Mujer
                 for (float i = 1; i < ClothesUtils.HATS_FEMALE.Count + 1; i++)
                 {
                     hatType.Add(GetConfig.Langs["HatsValue"] + i);
                 }
 
             }
-            MenuListItem mListHats = new MenuListItem(GetConfig.Langs["Hats"], hatType, indexHat, GetConfig.Langs["HatsDesc"]); // Añadimos la lista al boton
-            mainMenu.AddMenuItem(mListHats); // Lo añadimos al menu
+            MenuListItem mListHats = new MenuListItem(GetConfig.Langs["Hats"], hatType, indexHat, GetConfig.Langs["HatsDesc"]);
+            mainMenu.AddMenuItem(mListHats);
 
             List<string> eyeWearType = new List<string>();
             eyeWearType.Add(GetConfig.Langs["NoGlassesValue"]);
@@ -58,12 +55,10 @@ namespace vorpclothingstore_cl.Menus
 
             if (API.IsPedMale(API.PlayerPedId()))
             {
-                //Cabellos de Hombre
                 for (float i = 1; i < ClothesUtils.EYEWEAR_MALE.Count + 1; i++)
                 {
                     eyeWearType.Add(GetConfig.Langs["GlassesValue"] + i);
                 }
-
             }
             else
             {
@@ -74,8 +69,8 @@ namespace vorpclothingstore_cl.Menus
                 }
 
             }
-            MenuListItem mListEyeWear = new MenuListItem(GetConfig.Langs["Glasses"], eyeWearType, indexEyeWears, GetConfig.Langs["GlassesDesc"]); // Añadimos la lista al boton
-            mainMenu.AddMenuItem(mListEyeWear); // Lo añadimos al menu
+            MenuListItem mListEyeWear = new MenuListItem(GetConfig.Langs["Glasses"], eyeWearType, indexEyeWears, GetConfig.Langs["GlassesDesc"]);
+            mainMenu.AddMenuItem(mListEyeWear);
 
             List<string> neckWearType = new List<string>();
             neckWearType.Add(GetConfig.Langs["NoNeckwearValue"]);
@@ -83,24 +78,21 @@ namespace vorpclothingstore_cl.Menus
 
             if (API.IsPedMale(API.PlayerPedId()))
             {
-                //Cabellos de Hombre
                 for (float i = 1; i < ClothesUtils.NECKWEAR_MALE.Count + 1; i++)
                 {
                     neckWearType.Add(GetConfig.Langs["NeckwearValue"] + i);
                 }
-
             }
             else
             {
-                //Cabellos de Mujer
                 for (float i = 1; i < ClothesUtils.NECKWEAR_FEMALE.Count + 1; i++)
                 {
                     neckWearType.Add(GetConfig.Langs["NeckwearValue"] + i);
                 }
 
             }
-            MenuListItem mListNeckWear = new MenuListItem(GetConfig.Langs["Neckwear"], neckWearType, indexNeckWear, GetConfig.Langs["NeckwearDesc"]); // Añadimos la lista al boton
-            mainMenu.AddMenuItem(mListNeckWear); // Lo añadimos al menu
+            MenuListItem mListNeckWear = new MenuListItem(GetConfig.Langs["Neckwear"], neckWearType, indexNeckWear, GetConfig.Langs["NeckwearDesc"]);
+            mainMenu.AddMenuItem(mListNeckWear);
 
             List<string> maskType = new List<string>();
             maskType.Add(GetConfig.Langs["NoMaskValue"]);
@@ -108,24 +100,21 @@ namespace vorpclothingstore_cl.Menus
 
             if (API.IsPedMale(API.PlayerPedId()))
             {
-                //Cabellos de Hombre
                 for (float i = 1; i < ClothesUtils.MASK_MALE.Count + 1; i++)
                 {
                     maskType.Add(GetConfig.Langs["MaskValue"] + i);
                 }
-
             }
             else
             {
-                //Cabellos de Mujer
                 for (float i = 1; i < ClothesUtils.MASK_FEMALE.Count + 1; i++)
                 {
                     maskType.Add(GetConfig.Langs["MaskValue"] + i);
                 }
 
             }
-            MenuListItem mListMask = new MenuListItem(GetConfig.Langs["Masks"], maskType, indexMaskType, GetConfig.Langs["MasksDesc"]); // Añadimos la lista al boton
-            mainMenu.AddMenuItem(mListMask); // Lo añadimos al menu
+            MenuListItem mListMask = new MenuListItem(GetConfig.Langs["Masks"], maskType, indexMaskType, GetConfig.Langs["MasksDesc"]);
+            mainMenu.AddMenuItem(mListMask);
 
             List<string> neckTiesType = new List<string>();
             neckTiesType.Add(GetConfig.Langs["NoTiesValue"]);
@@ -133,24 +122,20 @@ namespace vorpclothingstore_cl.Menus
 
             if (API.IsPedMale(API.PlayerPedId()))
             {
-                //Cabellos de Hombre
                 for (float i = 1; i < ClothesUtils.NECKTIES_MALE.Count + 1; i++)
                 {
                     neckTiesType.Add(GetConfig.Langs["TiesValue"] + i);
                 }
-
             }
             else
             {
-                //Cabellos de Mujer
                 for (float i = 1; i < ClothesUtils.NECKTIES_FEMALE.Count + 1; i++)
                 {
                     neckTiesType.Add(GetConfig.Langs["TiesValue"] + i);
                 }
-
             }
-            MenuListItem mListNeckTies = new MenuListItem(GetConfig.Langs["Ties"], neckTiesType, indexNeckTies, GetConfig.Langs["TiesDesc"]); // Añadimos la lista al boton
-            mainMenu.AddMenuItem(mListNeckTies); // Lo añadimos al menu
+            MenuListItem mListNeckTies = new MenuListItem(GetConfig.Langs["Ties"], neckTiesType, indexNeckTies, GetConfig.Langs["TiesDesc"]);
+            mainMenu.AddMenuItem(mListNeckTies);
 
             List<string> shirtsType = new List<string>();
             shirtsType.Add(GetConfig.Langs["NoShirtsValue"]);
@@ -158,24 +143,20 @@ namespace vorpclothingstore_cl.Menus
 
             if (API.IsPedMale(API.PlayerPedId()))
             {
-                //Cabellos de Hombre
                 for (float i = 1; i < ClothesUtils.SHIRTS_MALE.Count + 1; i++)
                 {
                     shirtsType.Add(GetConfig.Langs["ShirtsValue"] + i);
                 }
-
             }
             else
             {
-                //Cabellos de Mujer
                 for (float i = 1; i < ClothesUtils.SHIRTS_FEMALE.Count + 1; i++)
                 {
                     shirtsType.Add(GetConfig.Langs["ShirtsValue"] + i);
                 }
-
             }
-            MenuListItem mListShirts = new MenuListItem(GetConfig.Langs["Shirts"], shirtsType, indexShirt, GetConfig.Langs["ShirtsDesc"]); // Añadimos la lista al boton
-            mainMenu.AddMenuItem(mListShirts); // Lo añadimos al menu
+            MenuListItem mListShirts = new MenuListItem(GetConfig.Langs["Shirts"], shirtsType, indexShirt, GetConfig.Langs["ShirtsDesc"]);
+            mainMenu.AddMenuItem(mListShirts);
 
             List<string> suspendersType = new List<string>();
             suspendersType.Add(GetConfig.Langs["NoSuspendersValue"]);
@@ -183,24 +164,21 @@ namespace vorpclothingstore_cl.Menus
 
             if (API.IsPedMale(API.PlayerPedId()))
             {
-                //Cabellos de Hombre
                 for (float i = 1; i < ClothesUtils.SUSPENDERS_MALE.Count + 1; i++)
                 {
                     suspendersType.Add(GetConfig.Langs["SuspendersValue"] + i);
                 }
-
             }
             else
             {
-                //Cabellos de Mujer
                 for (float i = 1; i < ClothesUtils.SUSPENDERS_FEMALE.Count + 1; i++)
                 {
                     suspendersType.Add(GetConfig.Langs["SuspendersValue"] + i);
                 }
 
             }
-            MenuListItem mListSuspenders = new MenuListItem(GetConfig.Langs["Suspenders"], suspendersType, indexSuspender, GetConfig.Langs["SuspendersDesc"]); // Añadimos la lista al boton
-            mainMenu.AddMenuItem(mListSuspenders); // Lo añadimos al menu
+            MenuListItem mListSuspenders = new MenuListItem(GetConfig.Langs["Suspenders"], suspendersType, indexSuspender, GetConfig.Langs["SuspendersDesc"]);
+            mainMenu.AddMenuItem(mListSuspenders);
 
             List<string> vestType = new List<string>();
             vestType.Add(GetConfig.Langs["NoVestsValue"]);
@@ -208,24 +186,21 @@ namespace vorpclothingstore_cl.Menus
 
             if (API.IsPedMale(API.PlayerPedId()))
             {
-                //Cabellos de Hombre
                 for (float i = 1; i < ClothesUtils.VEST_MALE.Count + 1; i++)
                 {
                     vestType.Add(GetConfig.Langs["VestsValue"] + i);
                 }
-
             }
             else
             {
-                //Cabellos de Mujer
                 for (float i = 1; i < ClothesUtils.VEST_FEMALE.Count + 1; i++)
                 {
                     vestType.Add(GetConfig.Langs["VestsValue"] + i);
                 }
 
             }
-            MenuListItem mListVest = new MenuListItem(GetConfig.Langs["Vests"], vestType, indexVest, GetConfig.Langs["VestsDesc"]); // Añadimos la lista al boton
-            mainMenu.AddMenuItem(mListVest); // Lo añadimos al menu
+            MenuListItem mListVest = new MenuListItem(GetConfig.Langs["Vests"], vestType, indexVest, GetConfig.Langs["VestsDesc"]);
+            mainMenu.AddMenuItem(mListVest);
 
             List<string> coatsType = new List<string>();
             coatsType.Add(GetConfig.Langs["NoCoatsValue"]);
@@ -233,31 +208,27 @@ namespace vorpclothingstore_cl.Menus
 
             if (API.IsPedMale(API.PlayerPedId()))
             {
-                //Cabellos de Hombre
                 for (float i = 1; i < ClothesUtils.COATS_MALE.Count + 1; i++)
                 {
                     coatsType.Add(GetConfig.Langs["CoatsValue"] + i);
                 }
-
             }
             else
             {
-                //Cabellos de Mujer
                 for (float i = 1; i < ClothesUtils.COATS_FEMALE.Count + 1; i++)
                 {
                     coatsType.Add(GetConfig.Langs["CoatsValue"] + i);
                 }
 
             }
-            MenuListItem mListCoats = new MenuListItem(GetConfig.Langs["Coats"], coatsType, indexCoat, GetConfig.Langs["CoatsDesc"]); // Añadimos la lista al boton
-            mainMenu.AddMenuItem(mListCoats); // Lo añadimos al menu
+            MenuListItem mListCoats = new MenuListItem(GetConfig.Langs["Coats"], coatsType, indexCoat, GetConfig.Langs["CoatsDesc"]);
+            mainMenu.AddMenuItem(mListCoats);
 
             List<string> coatsClosedType = new List<string>();
             coatsClosedType.Add(GetConfig.Langs["NoCoatsValue"]);
 
             if (API.IsPedMale(API.PlayerPedId()))
             {
-                //Cabellos de Hombre
                 for (float i = 1; i < ClothesUtils.COATS_CLOSED_MALE.Count + 1; i++)
                 {
                     coatsClosedType.Add(GetConfig.Langs["CoatsValue"] + i);
@@ -265,14 +236,13 @@ namespace vorpclothingstore_cl.Menus
             }
             else
             {
-                //Cabellos de Mujer
                 for (float i = 1; i < ClothesUtils.COATS_CLOSED_FEMALE.Count + 1; i++)
                 {
                     coatsClosedType.Add(GetConfig.Langs["CoatsValue"] + i);
                 }
             }
-            MenuListItem mListCoatsClosed = new MenuListItem(GetConfig.Langs["CoatsClosed"], coatsClosedType, 0, GetConfig.Langs["CoatsDesc"]); // Añadimos la lista al boton
-            mainMenu.AddMenuItem(mListCoatsClosed); // Lo añadimos al menu
+            MenuListItem mListCoatsClosed = new MenuListItem(GetConfig.Langs["CoatsClosed"], coatsClosedType, 0, GetConfig.Langs["CoatsDesc"]);
+            mainMenu.AddMenuItem(mListCoatsClosed);
 
             List<string> ponchosType = new List<string>();
             ponchosType.Add(GetConfig.Langs["NoPonchosValue"]);
@@ -280,24 +250,21 @@ namespace vorpclothingstore_cl.Menus
 
             if (API.IsPedMale(API.PlayerPedId()))
             {
-                //Cabellos de Hombre
                 for (float i = 1; i < ClothesUtils.PONCHOS_MALE.Count + 1; i++)
                 {
                     ponchosType.Add(GetConfig.Langs["PonchosValue"] + i);
                 }
-
             }
             else
             {
-                //Cabellos de Mujer
                 for (float i = 1; i < ClothesUtils.PONCHOS_FEMALE.Count + 1; i++)
                 {
                     ponchosType.Add(GetConfig.Langs["PonchosValue"] + i);
                 }
 
             }
-            MenuListItem mListPonchos = new MenuListItem(GetConfig.Langs["Ponchos"], ponchosType, indexPoncho, GetConfig.Langs["PonchosDesc"]); // Añadimos la lista al boton
-            mainMenu.AddMenuItem(mListPonchos); // Lo añadimos al menu
+            MenuListItem mListPonchos = new MenuListItem(GetConfig.Langs["Ponchos"], ponchosType, indexPoncho, GetConfig.Langs["PonchosDesc"]);
+            mainMenu.AddMenuItem(mListPonchos);
 
             List<string> cloakType = new List<string>();
             cloakType.Add(GetConfig.Langs["NoCloaksValue"]);
@@ -305,24 +272,21 @@ namespace vorpclothingstore_cl.Menus
 
             if (API.IsPedMale(API.PlayerPedId()))
             {
-                //Cabellos de Hombre
                 for (float i = 1; i < ClothesUtils.CLOAK_MALE.Count + 1; i++)
                 {
                     cloakType.Add(GetConfig.Langs["CloaksValue"] + i);
                 }
-
             }
             else
             {
-                //Cabellos de Mujer
                 for (float i = 1; i < ClothesUtils.CLOAK_FEMALE.Count + 1; i++)
                 {
                     cloakType.Add(GetConfig.Langs["CloaksValue"] + i);
                 }
 
             }
-            MenuListItem mListCloak = new MenuListItem(GetConfig.Langs["Cloaks"], cloakType, indexCloak, GetConfig.Langs["CloaksDesc"]); // Añadimos la lista al boton
-            mainMenu.AddMenuItem(mListCloak); // Lo añadimos al menu
+            MenuListItem mListCloak = new MenuListItem(GetConfig.Langs["Cloaks"], cloakType, indexCloak, GetConfig.Langs["CloaksDesc"]);
+            mainMenu.AddMenuItem(mListCloak);
 
             List<string> glovesType = new List<string>();
             glovesType.Add(GetConfig.Langs["NoGlovesValue"]);
@@ -330,24 +294,21 @@ namespace vorpclothingstore_cl.Menus
 
             if (API.IsPedMale(API.PlayerPedId()))
             {
-                //Cabellos de Hombre
                 for (float i = 1; i < ClothesUtils.GLOVES_MALE.Count + 1; i++)
                 {
                     glovesType.Add(GetConfig.Langs["GlovesValue"] + i);
                 }
-
             }
             else
             {
-                //Cabellos de Mujer
                 for (float i = 1; i < ClothesUtils.GLOVES_FEMALE.Count + 1; i++)
                 {
                     glovesType.Add(GetConfig.Langs["GlovesValue"] + i);
                 }
 
             }
-            MenuListItem mListGloves = new MenuListItem(GetConfig.Langs["Gloves"], glovesType, indexGlove, GetConfig.Langs["GlovesDesc"]); // Añadimos la lista al boton
-            mainMenu.AddMenuItem(mListGloves); // Lo añadimos al menu
+            MenuListItem mListGloves = new MenuListItem(GetConfig.Langs["Gloves"], glovesType, indexGlove, GetConfig.Langs["GlovesDesc"]);
+            mainMenu.AddMenuItem(mListGloves); 
 
             List<string> ringsRhType = new List<string>();
             ringsRhType.Add(GetConfig.Langs["NoRingsValue"]);
@@ -355,24 +316,21 @@ namespace vorpclothingstore_cl.Menus
 
             if (API.IsPedMale(API.PlayerPedId()))
             {
-                //Cabellos de Hombre
                 for (float i = 1; i < ClothesUtils.RINGS_RH_MALE.Count + 1; i++)
                 {
                     ringsRhType.Add(GetConfig.Langs["RingsValue"] + i);
                 }
-
             }
             else
             {
-                //Cabellos de Mujer
                 for (float i = 1; i < ClothesUtils.RINGS_RH_FEMALE.Count + 1; i++)
                 {
                     ringsRhType.Add(GetConfig.Langs["RingsValue"] + i);
                 }
 
             }
-            MenuListItem mListRingsRhType = new MenuListItem(GetConfig.Langs["RightRings"], ringsRhType, indexRingRh, GetConfig.Langs["RightRingsDesc"]); // Añadimos la lista al boton
-            mainMenu.AddMenuItem(mListRingsRhType); // Lo añadimos al menu
+            MenuListItem mListRingsRhType = new MenuListItem(GetConfig.Langs["RightRings"], ringsRhType, indexRingRh, GetConfig.Langs["RightRingsDesc"]);
+            mainMenu.AddMenuItem(mListRingsRhType);
 
             List<string> ringsLhType = new List<string>();
             ringsLhType.Add(GetConfig.Langs["NoRingsValue"]);
@@ -380,24 +338,21 @@ namespace vorpclothingstore_cl.Menus
 
             if (API.IsPedMale(API.PlayerPedId()))
             {
-                //Cabellos de Hombre
                 for (float i = 1; i < ClothesUtils.RINGS_LH_MALE.Count + 1; i++)
                 {
                     ringsLhType.Add(GetConfig.Langs["RingsValue"] + i);
                 }
-
             }
             else
             {
-                //Cabellos de Mujer
                 for (float i = 1; i < ClothesUtils.RINGS_LH_FEMALE.Count + 1; i++)
                 {
                     ringsLhType.Add(GetConfig.Langs["RingsValue"] + i);
                 }
 
             }
-            MenuListItem mListRingsLh = new MenuListItem(GetConfig.Langs["LeftRings"], ringsLhType, indexRingLh, GetConfig.Langs["LeftRingsDesc"]); // Añadimos la lista al boton
-            mainMenu.AddMenuItem(mListRingsLh); // Lo añadimos al menu
+            MenuListItem mListRingsLh = new MenuListItem(GetConfig.Langs["LeftRings"], ringsLhType, indexRingLh, GetConfig.Langs["LeftRingsDesc"]);
+            mainMenu.AddMenuItem(mListRingsLh);
 
             List<string> braceletsType = new List<string>();
             braceletsType.Add(GetConfig.Langs["NoBraceletsValue"]);
@@ -405,7 +360,6 @@ namespace vorpclothingstore_cl.Menus
 
             if (API.IsPedMale(API.PlayerPedId()))
             {
-                //Cabellos de Hombre
                 for (float i = 1; i < ClothesUtils.BRACELETS_MALE.Count + 1; i++)
                 {
                     braceletsType.Add(GetConfig.Langs["BraceletsValue"] + i);
@@ -414,15 +368,14 @@ namespace vorpclothingstore_cl.Menus
             }
             else
             {
-                //Cabellos de Mujer
                 for (float i = 1; i < ClothesUtils.BRACELETS_FEMALE.Count + 1; i++)
                 {
                     braceletsType.Add(GetConfig.Langs["BraceletsValue"] + i);
                 }
 
             }
-            MenuListItem mListbracelets = new MenuListItem(GetConfig.Langs["Bracelets"], braceletsType, indexBracelet, GetConfig.Langs["BraceletsDesc"]); // Añadimos la lista al boton
-            mainMenu.AddMenuItem(mListbracelets); // Lo añadimos al menu
+            MenuListItem mListbracelets = new MenuListItem(GetConfig.Langs["Bracelets"], braceletsType, indexBracelet, GetConfig.Langs["BraceletsDesc"]);
+            mainMenu.AddMenuItem(mListbracelets);
 
             List<string> gunbeltType = new List<string>();
             gunbeltType.Add(GetConfig.Langs["NoHolstersValue"]);
@@ -430,24 +383,21 @@ namespace vorpclothingstore_cl.Menus
 
             if (API.IsPedMale(API.PlayerPedId()))
             {
-                //Cabellos de Hombre
                 for (float i = 1; i < ClothesUtils.GUNBELT_MALE.Count + 1; i++)
                 {
                     gunbeltType.Add(GetConfig.Langs["HolstersValue"] + i);
                 }
-
             }
             else
             {
-                //Cabellos de Mujer
                 for (float i = 1; i < ClothesUtils.GUNBELT_FEMALE.Count + 1; i++)
                 {
                     gunbeltType.Add(GetConfig.Langs["HolstersValue"] + i);
                 }
 
             }
-            MenuListItem mListGunbelt = new MenuListItem(GetConfig.Langs["PrimaryHolsters"], gunbeltType, indexGunbelt, GetConfig.Langs["PrimaryHolstersDesc"]); // Añadimos la lista al boton
-            mainMenu.AddMenuItem(mListGunbelt); // Lo añadimos al menu
+            MenuListItem mListGunbelt = new MenuListItem(GetConfig.Langs["PrimaryHolsters"], gunbeltType, indexGunbelt, GetConfig.Langs["PrimaryHolstersDesc"]);
+            mainMenu.AddMenuItem(mListGunbelt);
 
             List<string> beltType = new List<string>();
             beltType.Add(GetConfig.Langs["NoBeltsValue"]);
@@ -455,24 +405,21 @@ namespace vorpclothingstore_cl.Menus
 
             if (API.IsPedMale(API.PlayerPedId()))
             {
-                //Cabellos de Hombre
                 for (float i = 1; i < ClothesUtils.BELT_MALE.Count + 1; i++)
                 {
                     beltType.Add(GetConfig.Langs["BeltsValue"] + i);
                 }
-
             }
             else
             {
-                //Cabellos de Mujer
                 for (float i = 1; i < ClothesUtils.BELT_FEMALE.Count + 1; i++)
                 {
                     beltType.Add(GetConfig.Langs["BeltsValue"] + i);
                 }
 
             }
-            MenuListItem mListBelt = new MenuListItem(GetConfig.Langs["Belts"], beltType, indexBelt, GetConfig.Langs["BeltsDesc"]); // Añadimos la lista al boton
-            mainMenu.AddMenuItem(mListBelt); // Lo añadimos al menu
+            MenuListItem mListBelt = new MenuListItem(GetConfig.Langs["Belts"], beltType, indexBelt, GetConfig.Langs["BeltsDesc"]);
+            mainMenu.AddMenuItem(mListBelt);
 
             List<string> buckleType = new List<string>();
             buckleType.Add(GetConfig.Langs["NoBucklesValue"]);
@@ -480,24 +427,21 @@ namespace vorpclothingstore_cl.Menus
 
             if (API.IsPedMale(API.PlayerPedId()))
             {
-                //Cabellos de Hombre
                 for (float i = 1; i < ClothesUtils.BUCKLE_MALE.Count + 1; i++)
                 {
                     buckleType.Add(GetConfig.Langs["BucklesValue"] + i);
                 }
-
             }
             else
             {
-                //Cabellos de Mujer
                 for (float i = 1; i < ClothesUtils.BUCKLE_FEMALE.Count + 1; i++)
                 {
                     buckleType.Add(GetConfig.Langs["BucklesValue"] + i);
                 }
 
             }
-            MenuListItem mListBuckle = new MenuListItem(GetConfig.Langs["Buckles"], buckleType, indexBuckle, GetConfig.Langs["BucklesDesc"]); // Añadimos la lista al boton
-            mainMenu.AddMenuItem(mListBuckle); // Lo añadimos al menu
+            MenuListItem mListBuckle = new MenuListItem(GetConfig.Langs["Buckles"], buckleType, indexBuckle, GetConfig.Langs["BucklesDesc"]);
+            mainMenu.AddMenuItem(mListBuckle);
 
             List<string> holstersSType = new List<string>();
             holstersSType.Add(GetConfig.Langs["NoHolstersValue"]);
@@ -505,24 +449,21 @@ namespace vorpclothingstore_cl.Menus
 
             if (API.IsPedMale(API.PlayerPedId()))
             {
-                //Cabellos de Hombre
                 for (float i = 1; i < ClothesUtils.HOLSTERS_S_MALE.Count + 1; i++)
                 {
                     holstersSType.Add(GetConfig.Langs["HolstersValue"] + i);
                 }
-
             }
             else
             {
-                //Cabellos de Mujer
                 for (float i = 1; i < ClothesUtils.HOLSTERS_S_FEMALE.Count + 1; i++)
                 {
                     holstersSType.Add(GetConfig.Langs["HolstersValue"] + i);
                 }
 
             }
-            MenuListItem mListSHolsters = new MenuListItem(GetConfig.Langs["SecondaryHolsters"], holstersSType, indexHolster, GetConfig.Langs["SecondaryHolstersDesc"]); // Añadimos la lista al boton
-            mainMenu.AddMenuItem(mListSHolsters); // Lo añadimos al menu
+            MenuListItem mListSHolsters = new MenuListItem(GetConfig.Langs["SecondaryHolsters"], holstersSType, indexHolster, GetConfig.Langs["SecondaryHolstersDesc"]);
+            mainMenu.AddMenuItem(mListSHolsters);
 
             List<string> pantsType = new List<string>();
             pantsType.Add(GetConfig.Langs["NoPantsValue"]);
@@ -530,24 +471,21 @@ namespace vorpclothingstore_cl.Menus
 
             if (API.IsPedMale(API.PlayerPedId()))
             {
-                //Cabellos de Hombre
                 for (float i = 1; i < ClothesUtils.PANTS_MALE.Count + 1; i++)
                 {
                     pantsType.Add(GetConfig.Langs["PantsValue"] + i);
                 }
-
             }
             else
             {
-                //Cabellos de Mujer
                 for (float i = 1; i < ClothesUtils.PANTS_FEMALE.Count + 1; i++)
                 {
                     pantsType.Add(GetConfig.Langs["PantsValue"] + i);
                 }
 
             }
-            MenuListItem mListPants = new MenuListItem(GetConfig.Langs["Pants"], pantsType, indexPant, GetConfig.Langs["PantsDesc"]); // Añadimos la lista al boton
-            mainMenu.AddMenuItem(mListPants); // Lo añadimos al menu
+            MenuListItem mListPants = new MenuListItem(GetConfig.Langs["Pants"], pantsType, indexPant, GetConfig.Langs["PantsDesc"]);
+            mainMenu.AddMenuItem(mListPants);
 
             List<string> skirtsType = new List<string>();
             skirtsType.Add(GetConfig.Langs["NoSkirtsValue"]);
@@ -558,14 +496,13 @@ namespace vorpclothingstore_cl.Menus
             }
             else
             {
-                //Cabellos de Mujer
                 for (float i = 1; i < ClothesUtils.SKIRTS_FEMALE.Count + 1; i++)
                 {
                     skirtsType.Add(GetConfig.Langs["SkirtsValue"] + i);
                 }
             }
-            MenuListItem mListSkirts = new MenuListItem(GetConfig.Langs["Skirts"], skirtsType, indexSkirt, GetConfig.Langs["SkirtsDesc"]); // Añadimos la lista al boton
-            mainMenu.AddMenuItem(mListSkirts); // Lo añadimos al menu
+            MenuListItem mListSkirts = new MenuListItem(GetConfig.Langs["Skirts"], skirtsType, indexSkirt, GetConfig.Langs["SkirtsDesc"]);
+            mainMenu.AddMenuItem(mListSkirts);
 
             List<string> chapsType = new List<string>();
             chapsType.Add(GetConfig.Langs["NoChapsValue"]);
@@ -573,24 +510,21 @@ namespace vorpclothingstore_cl.Menus
 
             if (API.IsPedMale(API.PlayerPedId()))
             {
-                //Cabellos de Hombre
                 for (float i = 1; i < ClothesUtils.CHAPS_MALE.Count + 1; i++)
                 {
                     chapsType.Add(GetConfig.Langs["ChapsValue"] + i);
                 }
-
             }
             else
             {
-                //Cabellos de Mujer
                 for (float i = 1; i < ClothesUtils.CHAPS_FEMALE.Count + 1; i++)
                 {
                     chapsType.Add(GetConfig.Langs["ChapsValue"] + i);
                 }
 
             }
-            MenuListItem mListChaps = new MenuListItem(GetConfig.Langs["Chaps"], chapsType, indexChap, GetConfig.Langs["ChapsDesc"]); // Añadimos la lista al boton
-            mainMenu.AddMenuItem(mListChaps); // Lo añadimos al menu
+            MenuListItem mListChaps = new MenuListItem(GetConfig.Langs["Chaps"], chapsType, indexChap, GetConfig.Langs["ChapsDesc"]);
+            mainMenu.AddMenuItem(mListChaps);
 
             List<string> bootsType = new List<string>();
             bootsType.Add(GetConfig.Langs["NoBootsValue"]);
@@ -598,7 +532,6 @@ namespace vorpclothingstore_cl.Menus
 
             if (API.IsPedMale(API.PlayerPedId()))
             {
-                //Cabellos de Hombre
                 for (float i = 1; i < ClothesUtils.BOOTS_MALE.Count + 1; i++)
                 {
                     bootsType.Add(GetConfig.Langs["BootsValue"] + i);
@@ -606,14 +539,13 @@ namespace vorpclothingstore_cl.Menus
             }
             else
             {
-                //Cabellos de Mujer
                 for (float i = 1; i < ClothesUtils.BOOTS_FEMALE.Count + 1; i++)
                 {
                     bootsType.Add(GetConfig.Langs["BootsValue"] + i);
                 }
             }
-            MenuListItem mListBoots = new MenuListItem(GetConfig.Langs["Boots"], bootsType, indexBoots, GetConfig.Langs["BootsDesc"]); // Añadimos la lista al boton
-            mainMenu.AddMenuItem(mListBoots); // Lo añadimos al menu
+            MenuListItem mListBoots = new MenuListItem(GetConfig.Langs["Boots"], bootsType, indexBoots, GetConfig.Langs["BootsDesc"]);
+            mainMenu.AddMenuItem(mListBoots);
 
             List<string> spursType = new List<string>();
             spursType.Add(GetConfig.Langs["NoSpursValue"]);
@@ -621,7 +553,6 @@ namespace vorpclothingstore_cl.Menus
 
             if (API.IsPedMale(API.PlayerPedId()))
             {
-                //Cabellos de Hombre
                 for (float i = 1; i < ClothesUtils.SPURS_MALE.Count + 1; i++)
                 {
                     spursType.Add(GetConfig.Langs["SpursValue"] + i);
@@ -629,14 +560,139 @@ namespace vorpclothingstore_cl.Menus
             }
             else
             {
-                //Cabellos de Mujer
                 for (float i = 1; i < ClothesUtils.SPURS_FEMALE.Count + 1; i++)
                 {
                     spursType.Add(GetConfig.Langs["SpursValue"] + i);
                 }
             }
-            MenuListItem mListSpurs = new MenuListItem(GetConfig.Langs["Spurs"], spursType, indexSpurs, GetConfig.Langs["SpursDesc"]); // Añadimos la lista al boton
-            mainMenu.AddMenuItem(mListSpurs); // Lo añadimos al menu
+            MenuListItem mListSpurs = new MenuListItem(GetConfig.Langs["Spurs"], spursType, indexSpurs, GetConfig.Langs["SpursDesc"]);
+            mainMenu.AddMenuItem(mListSpurs);
+
+            List<string> spatsType = new List<string>();
+            spatsType.Add(GetConfig.Langs["NoSpatsValue"]);
+            int indexSpats = 0;
+
+            if (API.IsPedMale(API.PlayerPedId()))
+            {
+                for (float i = 1; i < ClothesUtils.SPATS_MALE.Count + 1; i++)
+                {
+                    spatsType.Add(GetConfig.Langs["SpatsValue"] + i);
+                }
+            }
+            else
+            {
+                for (float i = 1; i < ClothesUtils.SPATS_FEMALE.Count + 1; i++)
+                {
+                    spatsType.Add(GetConfig.Langs["SpatsValue"] + i);
+                }
+            }
+            MenuListItem mListSpats = new MenuListItem(GetConfig.Langs["Spats"], spatsType, indexSpats, GetConfig.Langs["SpatsDesc"]);
+            mainMenu.AddMenuItem(mListSpats);
+
+            List<string> gauntletsType = new List<string>();
+            gauntletsType.Add(GetConfig.Langs["NoGauntletsValue"]);
+            int indexGauntlets = 0;
+
+            if (API.IsPedMale(API.PlayerPedId()))
+            {
+                for (float i = 1; i < ClothesUtils.GAUNTLETS_MALE.Count + 1; i++)
+                {
+                    gauntletsType.Add(GetConfig.Langs["GauntletsValue"] + i);
+                }
+            }
+            else
+            {
+                for (float i = 1; i < ClothesUtils.GAUNTLETS_FEMALE.Count + 1; i++)
+                {
+                    gauntletsType.Add(GetConfig.Langs["GauntletsValue"] + i);
+                }
+            }
+            MenuListItem mListGauntlets = new MenuListItem(GetConfig.Langs["Gauntlets"], gauntletsType, indexGauntlets, GetConfig.Langs["GauntletsDesc"]);
+            mainMenu.AddMenuItem(mListGauntlets);
+
+            List<string> loadoutsType = new List<string>();
+            loadoutsType.Add(GetConfig.Langs["NoLoadoutsValue"]);
+            int indexLoadouts = 0;
+
+            if (API.IsPedMale(API.PlayerPedId()))
+            {
+                for (float i = 1; i < ClothesUtils.LOADOUTS_MALE.Count + 1; i++)
+                {
+                    loadoutsType.Add(GetConfig.Langs["LoadoutsValue"] + i);
+                }
+            }
+            else
+            {
+                for (float i = 1; i < ClothesUtils.LOADOUTS_FEMALE.Count + 1; i++)
+                {
+                    loadoutsType.Add(GetConfig.Langs["LoadoutsValue"] + i);
+                }
+            }
+            MenuListItem mListLoadouts = new MenuListItem(GetConfig.Langs["Loadouts"], loadoutsType, indexLoadouts, GetConfig.Langs["LoadoutsDesc"]);
+            mainMenu.AddMenuItem(mListLoadouts);
+
+            List<string> accessoriesType = new List<string>();
+            accessoriesType.Add(GetConfig.Langs["NoAccessoriesValue"]);
+            int indexAccessories = 0;
+
+            if (API.IsPedMale(API.PlayerPedId()))
+            {
+                for (float i = 1; i < ClothesUtils.ACCESSORIES_MALE.Count + 1; i++)
+                {
+                    accessoriesType.Add(GetConfig.Langs["AccessoriesValue"] + i);
+                }
+            }
+            else
+            {
+                for (float i = 1; i < ClothesUtils.ACCESSORIES_FEMALE.Count + 1; i++)
+                {
+                    accessoriesType.Add(GetConfig.Langs["AccessoriesValue"] + i);
+                }
+            }
+            MenuListItem mListAccessories = new MenuListItem(GetConfig.Langs["Accessories"], accessoriesType, indexAccessories, GetConfig.Langs["AccessoriesDesc"]);
+            mainMenu.AddMenuItem(mListAccessories);
+
+            List<string> satchelsType = new List<string>();
+            satchelsType.Add(GetConfig.Langs["NoSatchelsValue"]);
+            int indexSatchels = 0;
+
+            if (API.IsPedMale(API.PlayerPedId()))
+            {
+                for (float i = 1; i < ClothesUtils.SATCHELS_MALE.Count + 1; i++)
+                {
+                    satchelsType.Add(GetConfig.Langs["SatchelsValue"] + i);
+                }
+            }
+            else
+            {
+                for (float i = 1; i < ClothesUtils.SATCHELS_FEMALE.Count + 1; i++)
+                {
+                    satchelsType.Add(GetConfig.Langs["SatchelsValue"] + i);
+                }
+            }
+            MenuListItem mListSatchels = new MenuListItem(GetConfig.Langs["Satchels"], satchelsType, indexSatchels, GetConfig.Langs["SatchelsDesc"]);
+            mainMenu.AddMenuItem(mListSatchels);
+
+            List<string> gunbeltAccsType = new List<string>();
+            gunbeltAccsType.Add(GetConfig.Langs["NoGunbeltAccsValue"]);
+            int indexGunbeltAccs = 0;
+
+            if (API.IsPedMale(API.PlayerPedId()))
+            {
+                for (float i = 1; i < ClothesUtils.GUNBELTACCS_MALE.Count + 1; i++)
+                {
+                    gunbeltAccsType.Add(GetConfig.Langs["GunbeltAccsValue"] + i);
+                }
+            }
+            else
+            {
+                for (float i = 1; i < ClothesUtils.GUNBELTACCS_FEMALE.Count + 1; i++)
+                {
+                    gunbeltAccsType.Add(GetConfig.Langs["GunbeltAccsValue"] + i);
+                }
+            }
+            MenuListItem mListGunbeltAccs = new MenuListItem(GetConfig.Langs["GunbeltAccs"], gunbeltAccsType, indexGunbeltAccs, GetConfig.Langs["GunbeltAccsDesc"]);
+            mainMenu.AddMenuItem(mListGunbeltAccs);
 
             //Outfits
             MenuController.AddSubmenu(mainMenu, OutfitsMenu.GetMenu());
@@ -756,6 +812,30 @@ namespace vorpclothingstore_cl.Menus
                     {
                         mListSpurs.ListIndex = ClothesUtils.SPURS_MALE.IndexOf(Utils.Commands.ConvertValue(Utils.Commands.ClothesDB["Spurs"].ToString())) + 1;
                     }
+                    if (ClothesUtils.SPATS_MALE.IndexOf(Utils.Commands.ConvertValue(Utils.Commands.ClothesDB["Spats"].ToString())) != -1)
+                    {
+                        mListSpats.ListIndex = ClothesUtils.SPATS_MALE.IndexOf(Utils.Commands.ConvertValue(Utils.Commands.ClothesDB["Spats"].ToString())) + 1;
+                    }
+                    if (ClothesUtils.GAUNTLETS_MALE.IndexOf(Utils.Commands.ConvertValue(Utils.Commands.ClothesDB["Gauntlets"].ToString())) != -1)
+                    {
+                        mListGauntlets.ListIndex = ClothesUtils.GAUNTLETS_MALE.IndexOf(Utils.Commands.ConvertValue(Utils.Commands.ClothesDB["Gauntlets"].ToString())) + 1;
+                    }
+                    if (ClothesUtils.LOADOUTS_MALE.IndexOf(Utils.Commands.ConvertValue(Utils.Commands.ClothesDB["Loadouts"].ToString())) != -1)
+                    {
+                        mListLoadouts.ListIndex = ClothesUtils.LOADOUTS_MALE.IndexOf(Utils.Commands.ConvertValue(Utils.Commands.ClothesDB["Loadouts"].ToString())) + 1;
+                    }
+                    if (ClothesUtils.ACCESSORIES_MALE.IndexOf(Utils.Commands.ConvertValue(Utils.Commands.ClothesDB["Accessories"].ToString())) != -1)
+                    {
+                        mListAccessories.ListIndex = ClothesUtils.ACCESSORIES_MALE.IndexOf(Utils.Commands.ConvertValue(Utils.Commands.ClothesDB["Accessories"].ToString())) + 1;
+                    }
+                    if (ClothesUtils.SATCHELS_MALE.IndexOf(Utils.Commands.ConvertValue(Utils.Commands.ClothesDB["Satchels"].ToString())) != -1)
+                    {
+                        mListSatchels.ListIndex = ClothesUtils.SATCHELS_MALE.IndexOf(Utils.Commands.ConvertValue(Utils.Commands.ClothesDB["Satchels"].ToString())) + 1;
+                    }
+                    if (ClothesUtils.GUNBELTACCS_MALE.IndexOf(Utils.Commands.ConvertValue(Utils.Commands.ClothesDB["GunbeltAccs"].ToString())) != -1)
+                    {
+                        mListGunbeltAccs.ListIndex = ClothesUtils.GUNBELTACCS_MALE.IndexOf(Utils.Commands.ConvertValue(Utils.Commands.ClothesDB["GunbeltAccs"].ToString())) + 1;
+                    }
 
                 }
                 else
@@ -860,6 +940,30 @@ namespace vorpclothingstore_cl.Menus
                     {
                         mListSpurs.ListIndex = ClothesUtils.SPURS_FEMALE.IndexOf(Utils.Commands.ConvertValue(Utils.Commands.ClothesDB["Spurs"].ToString())) + 1;
                     }
+                    if (ClothesUtils.SPATS_FEMALE.IndexOf(Utils.Commands.ConvertValue(Utils.Commands.ClothesDB["Spats"].ToString())) != -1)
+                    {
+                        mListSpats.ListIndex = ClothesUtils.SPATS_FEMALE.IndexOf(Utils.Commands.ConvertValue(Utils.Commands.ClothesDB["Spats"].ToString())) + 1;
+                    }
+                    if (ClothesUtils.GAUNTLETS_FEMALE.IndexOf(Utils.Commands.ConvertValue(Utils.Commands.ClothesDB["Gauntlets"].ToString())) != -1)
+                    {
+                        mListGauntlets.ListIndex = ClothesUtils.GAUNTLETS_FEMALE.IndexOf(Utils.Commands.ConvertValue(Utils.Commands.ClothesDB["Gauntlets"].ToString())) + 1;
+                    }
+                    if (ClothesUtils.LOADOUTS_FEMALE.IndexOf(Utils.Commands.ConvertValue(Utils.Commands.ClothesDB["Loadouts"].ToString())) != -1)
+                    {
+                        mListLoadouts.ListIndex = ClothesUtils.LOADOUTS_FEMALE.IndexOf(Utils.Commands.ConvertValue(Utils.Commands.ClothesDB["Loadouts"].ToString())) + 1;
+                    }
+                    if (ClothesUtils.ACCESSORIES_FEMALE.IndexOf(Utils.Commands.ConvertValue(Utils.Commands.ClothesDB["Accessories"].ToString())) != -1)
+                    {
+                        mListAccessories.ListIndex = ClothesUtils.ACCESSORIES_FEMALE.IndexOf(Utils.Commands.ConvertValue(Utils.Commands.ClothesDB["Accessories"].ToString())) + 1;
+                    }
+                    if (ClothesUtils.SATCHELS_FEMALE.IndexOf(Utils.Commands.ConvertValue(Utils.Commands.ClothesDB["Satchels"].ToString())) != -1)
+                    {
+                        mListSatchels.ListIndex = ClothesUtils.SATCHELS_FEMALE.IndexOf(Utils.Commands.ConvertValue(Utils.Commands.ClothesDB["Satchels"].ToString())) + 1;
+                    }
+                    if (ClothesUtils.GUNBELTACCS_FEMALE.IndexOf(Utils.Commands.ConvertValue(Utils.Commands.ClothesDB["GunbeltAccs"].ToString())) != -1)
+                    {
+                        mListGunbeltAccs.ListIndex = ClothesUtils.GUNBELTACCS_FEMALE.IndexOf(Utils.Commands.ConvertValue(Utils.Commands.ClothesDB["GunbeltAccs"].ToString())) + 1;
+                    }
                 }
             };
 
@@ -956,7 +1060,29 @@ namespace vorpclothingstore_cl.Menus
                         Utils.Commands.SetPlayerComponent(Utils.Commands.model, _newIndex, 0x777EC6EF, "Boots", ClothesUtils.BOOTS_MALE, ClothesUtils.BOOTS_FEMALE);
                         break;
                     case 24:
+                        mListSpats.ListIndex = 0;
+                        Utils.Commands.SetPlayerComponent(Utils.Commands.model, 0, 0x514ADCEA, "Spats", ClothesUtils.SPATS_MALE, ClothesUtils.SPATS_FEMALE);
                         Utils.Commands.SetPlayerComponent(Utils.Commands.model, _newIndex, 0x18729F39, "Spurs", ClothesUtils.SPURS_MALE, ClothesUtils.SPURS_FEMALE);
+                        break;
+                    case 25:
+                        mListSpurs.ListIndex = 0;
+                        Utils.Commands.SetPlayerComponent(Utils.Commands.model, 0, 0x18729F39, "Spurs", ClothesUtils.SPURS_MALE, ClothesUtils.SPURS_FEMALE);
+                        Utils.Commands.SetPlayerComponent(Utils.Commands.model, _newIndex, 0x514ADCEA, "Spats", ClothesUtils.SPATS_MALE, ClothesUtils.SPATS_FEMALE);
+                        break;
+                    case 26:
+                        Utils.Commands.SetPlayerComponent(Utils.Commands.model, _newIndex, 0x91CE9B20, "Gauntlets", ClothesUtils.GAUNTLETS_MALE, ClothesUtils.GAUNTLETS_FEMALE);
+                        break;
+                    case 27:
+                        Utils.Commands.SetPlayerComponent(Utils.Commands.model, _newIndex, 0x83887E88, "Loadouts", ClothesUtils.LOADOUTS_MALE, ClothesUtils.LOADOUTS_FEMALE);
+                        break;
+                    case 28:
+                        Utils.Commands.SetPlayerComponent(Utils.Commands.model, _newIndex, 0x79D7DF96, "Accessories", ClothesUtils.ACCESSORIES_MALE, ClothesUtils.ACCESSORIES_FEMALE);
+                        break;
+                    case 29:
+                        Utils.Commands.SetPlayerComponent(Utils.Commands.model, _newIndex, 0x94504D26, "Satchels", ClothesUtils.SATCHELS_MALE, ClothesUtils.SATCHELS_FEMALE);
+                        break;
+                    case 30:
+                        Utils.Commands.SetPlayerComponent(Utils.Commands.model, _newIndex, 0xF1542D11, "GunbeltAccs", ClothesUtils.GUNBELTACCS_MALE, ClothesUtils.GUNBELTACCS_FEMALE);
                         break;
                 }
 
@@ -1062,6 +1188,30 @@ namespace vorpclothingstore_cl.Menus
                 {
                     totalCost += double.Parse(GetConfig.Config["costSpurs"].ToString());
                 }
+                if (Utils.Commands.ConvertValue(Utils.Commands.ClothesDB["Spats"].ToString()) != Utils.Commands.ConvertValue(Utils.Commands.clothesPlayer["Spats"].ToString()))
+                {
+                    totalCost += double.Parse(GetConfig.Config["costSpats"].ToString());
+                }
+                if (Utils.Commands.ConvertValue(Utils.Commands.ClothesDB["Gauntlets"].ToString()) != Utils.Commands.ConvertValue(Utils.Commands.clothesPlayer["Gauntlets"].ToString()))
+                {
+                    totalCost += double.Parse(GetConfig.Config["costGauntlets"].ToString());
+                }
+                if (Utils.Commands.ConvertValue(Utils.Commands.ClothesDB["Loadouts"].ToString()) != Utils.Commands.ConvertValue(Utils.Commands.clothesPlayer["Loadouts"].ToString()))
+                {
+                    totalCost += double.Parse(GetConfig.Config["costLoadouts"].ToString());
+                }
+                if (Utils.Commands.ConvertValue(Utils.Commands.ClothesDB["Accessories"].ToString()) != Utils.Commands.ConvertValue(Utils.Commands.clothesPlayer["Accessories"].ToString()))
+                {
+                    totalCost += double.Parse(GetConfig.Config["costAccessories"].ToString());
+                }
+                if (Utils.Commands.ConvertValue(Utils.Commands.ClothesDB["Satchels"].ToString()) != Utils.Commands.ConvertValue(Utils.Commands.clothesPlayer["Satchels"].ToString()))
+                {
+                    totalCost += double.Parse(GetConfig.Config["costSatchels"].ToString());
+                }
+                if (Utils.Commands.ConvertValue(Utils.Commands.ClothesDB["GunbeltAccs"].ToString()) != Utils.Commands.ConvertValue(Utils.Commands.clothesPlayer["GunbeltAccs"].ToString()))
+                {
+                    totalCost += double.Parse(GetConfig.Config["costGunbeltAccs"].ToString());
+                }
 
                 if (totalCost > 0.0)
                 {
@@ -1080,7 +1230,7 @@ namespace vorpclothingstore_cl.Menus
             {
                 // Code in here would get executed whenever an item is pressed.
                 Debug.WriteLine($"OnItemSelect: [{_menu}, {_item}, {_index}]");
-                if (_index == 26)
+                if (_index == 32)
                 {
                     Utils.Commands.isBuy = true;
                     Utils.Commands.FinishBuy(Utils.Commands.isBuy, totalCost);
@@ -1100,13 +1250,10 @@ namespace vorpclothingstore_cl.Menus
 
         }
 
-
-
         public static Menu GetMenu()
         {
             SetupMenu();
             return mainMenu;
         }
-
     }
 }
